@@ -1,0 +1,779 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "Titanic_prepared",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 3,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": false,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "xColumns": [
+          {
+            "name": "Age",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Title",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Fare",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Pclass",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Age",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 5,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4BR1tqC"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "HorLml3"
+              },
+              {
+                "type": "quantile_table",
+                "customFreqs": [
+                  0.0,
+                  0.25,
+                  0.5,
+                  0.75,
+                  1.0
+                ],
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4ALgi1b"
+              }
+            ],
+            "id": "kChFKwf"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Title",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "Title",
+                  "type": "CATEGORICAL"
+                },
+                "id": "AAod6P4"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Title",
+                  "type": "CATEGORICAL"
+                },
+                "id": "TnYqKUH"
+              }
+            ],
+            "id": "st8sHm3"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Fare",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 5,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "id": "AsUVGdT"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ej2KTdC"
+              },
+              {
+                "type": "quantile_table",
+                "customFreqs": [
+                  0.0,
+                  0.25,
+                  0.5,
+                  0.75,
+                  1.0
+                ],
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "id": "0lukhnN"
+              }
+            ],
+            "id": "vGSCt66"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Pclass",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Pclass",
+                  "type": "CONTINUOUS"
+                },
+                "id": "1PVP7lE"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Pclass",
+                  "type": "CONTINUOUS"
+                },
+                "id": "EmnopOG"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Pclass",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bG4KIBx"
+              }
+            ],
+            "id": "c0z05xM"
+          }
+        ],
+        "id": "v0vCSP6"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "Title",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Title",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "V5N3mjt"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "yEBdk3d"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "SdnnurO"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "EAuEY6n"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 4,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "TmBFqi8"
+              }
+            ],
+            "id": "I0GYwAM"
+          }
+        ],
+        "id": "B7v1kDw"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "Title",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Title",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "wyEZQSt"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ClX6goA"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "M734OBo"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "xkXpsgB"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 4,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Title",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "UJnL1k5"
+              }
+            ],
+            "id": "tFDzMrw"
+          }
+        ],
+        "id": "GkaFqAp"
+      },
+      {
+        "type": "bivariate_frequency_table",
+        "xBinningMode": "AUTO",
+        "yBinningMode": "AUTO",
+        "maxValuesX": 4,
+        "maxValuesY": 5,
+        "groupWithOthersX": true,
+        "groupWithOthersY": true,
+        "xCustomBinningBoundaries": [],
+        "yCustomBinningBoundaries": [],
+        "xColumn": {
+          "name": "Title",
+          "type": "CATEGORICAL"
+        },
+        "yColumn": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "id": "XZAVylX"
+      },
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": false,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "xColumns": [
+          {
+            "name": "Title",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Age",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Title",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "Title",
+                  "type": "CATEGORICAL"
+                },
+                "id": "AIfpu5n"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Title",
+                  "type": "CATEGORICAL"
+                },
+                "id": "fJgKR0Y"
+              }
+            ],
+            "id": "zIDX9Vr"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Age",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "FIXED_NB",
+                "nbBins": 4,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "WZ45LRY"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "15ZXBZJ"
+              },
+              {
+                "type": "quantile_table",
+                "customFreqs": [
+                  0.0,
+                  0.25,
+                  0.5,
+                  0.75,
+                  1.0
+                ],
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "YwnP1yv"
+              }
+            ],
+            "id": "gR5M1nD"
+          }
+        ],
+        "id": "8PTMWLg"
+      }
+    ],
+    "id": "KrVypUV"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 79,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591326825080
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591315554917
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

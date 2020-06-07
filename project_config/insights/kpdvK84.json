@@ -1,0 +1,267 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "Titanic_prepared",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "stacked_area",
+      "variant": "normal",
+      "name": "Survived by Title and Age",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "Title",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": "4",
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 4,
+          "generateOthersCategory": false,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of Survived, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of Survived, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "Age",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": "4",
+            "binSize": "5",
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 4,
+          "generateOthersCategory": false,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of Survived, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of Survived, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "Survived",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeModeDim": 0
+        }
+      ],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAChElEQVRoQ+3ZzytlURwA8HMkvyILmSyUldXUZDELQjElkgX+ACubIQu7NxYkC2zGyl72M5SIXqEoCcnUrGQkNDJh8fSEvKurua/rvXvv93zP93vefcVbn3vO+Zzv93zvOe9K8cZ+0qTXin5bFcJKG0O2TDSbHDeob2NgKxpZg1BhwI2AVbDOYmQazQ7GYN0ZkCk4KzgNe7RxKf7++pCENfQHZnkm0GzgNOzmtDcuZDQLWBnrLEGIaDIYjQ0ZTQJrY0NEa4PJ2JDQWmArOtQqRCKSrEp+BQo6eYSA1gS7TlHnB3fieLNQ1ebZDihi9jNcryw0mC2VU+UgWlqyZfwLaWHthcN0YAybwdTWB1P3rddKy5yEqP+aE3jbId60sgtsS8HUpu1nPbCJ6LrDahCNByOxc22HL5Su5WpMuYAjXSC6ZePEDa5TbNFaGlgW2zP5KoM40NS2KLiBMzcuwiMl4L8YNtAP6+DDRLODIawWGihmmEMJK1gVy45OPPTI1u+nKluNDYzFaqN9oq0aZRawLlareidPZX2WEPLV/FXQZDAFS4qyz3EUQpPAK01rt/GCymKVvQO1QVVur87+v8KMgjmi6547B9oYmBvLkt729W80FvgZRyulVbD3j0+JyOL+q5tPb231yceK0iqT6c0OhrCD87uQR0x1fgbbQOl9U/optl73oyS1o+66Ct4I+4FXDy+uFn6flYESVwMVuGp/zkKfTHbwgX9uXXiepVWi6jdxKnpwfs9yf5I1Ch5eOojHHh6LVKMQ1A4Ln93582///Lo8tU9jYEpUKdGGxjUChgalRnysvSZenJebzBzMeKxgKiQbnke9h7NhwtQ5vIOpK5jtzz8D0xMeOJrsP10AAAAASUVORK5CYII\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Survived by Title and Age on Titanic_prepared",
+  "dashboardCreationId": "ieOoI96",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591510424044
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591510424044
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

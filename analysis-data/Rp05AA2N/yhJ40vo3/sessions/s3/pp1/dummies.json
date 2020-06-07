@@ -1,0 +1,66 @@
+{
+    "details": {
+        "Fare": {
+            "levels": [
+                "0.0", 
+                "2.0", 
+                "1.0"
+            ], 
+            "with_others": false
+        }, 
+        "Title": {
+            "levels": [
+                "0", 
+                "1", 
+                "2"
+            ], 
+            "with_others": false
+        }, 
+        "Age": {
+            "levels": [
+                "2.0", 
+                "1.0", 
+                "3.0"
+            ], 
+            "with_others": false
+        }, 
+        "Embarked": {
+            "levels": [
+                "0", 
+                "1"
+            ], 
+            "with_others": false
+        }, 
+        "Pclass": {
+            "levels": [
+                "3", 
+                "1"
+            ], 
+            "with_others": false
+        }, 
+        "Sex": {
+            "levels": [
+                "0"
+            ], 
+            "with_others": false
+        }, 
+        "FamilySize": {
+            "levels": [
+                "0.0", 
+                "0.4", 
+                "0.8", 
+                "1.2"
+            ], 
+            "with_others": false
+        }, 
+        "Cabin": {
+            "levels": [
+                "1.2055", 
+                "0.8", 
+                "0.4", 
+                "1.6"
+            ], 
+            "with_others": false
+        }
+    }
+}

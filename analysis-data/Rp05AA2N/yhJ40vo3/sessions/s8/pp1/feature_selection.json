@@ -1,0 +1,32 @@
+{
+    "selection_params": {
+        "kept_columns": [
+            "dummy:Title:0", 
+            "dummy:Sex:0", 
+            "interaction:Pclass:Sex:1:1", 
+            "interaction:Pclass:Sex:3:0", 
+            "dummy:Title:1", 
+            "dummy:Pclass:3", 
+            "interaction:Pclass:Sex:2:1", 
+            "dummy:Pclass:1", 
+            "interaction:Pclass:FamilySize:3:0.0", 
+            "dummy:Fare:0.0", 
+            "dummy:FamilySize:0.0", 
+            "dummy:Embarked:1", 
+            "dummy:Fare:2.0", 
+            "dummy:Fare:1.0", 
+            "dummy:Fare:N/A", 
+            "dummy:Embarked:0", 
+            "dummy:Embarked:N/A", 
+            "dummy:Title:2", 
+            "dummy:Cabin:1.2055", 
+            "interaction:Pclass:FamilySize:1:0.4", 
+            "dummy:Cabin:0.4", 
+            "dummy:FamilySize:0.4", 
+            "interaction:Pclass:Sex:2:0", 
+            "dummy:Cabin:1.6", 
+            "dummy:FamilySize:0.8"
+        ]
+    }, 
+    "method": "DROP"
+}

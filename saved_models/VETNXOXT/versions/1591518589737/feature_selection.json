@@ -1,0 +1,32 @@
+{
+    "selection_params": {
+        "kept_columns": [
+            "dummy:Sex:__Others__", 
+            "dummy:Pclass:3", 
+            "dummy:Pclass:1", 
+            "dummy:Pclass:N/A", 
+            "dummy:Sex:0", 
+            "interaction:Pclass:Sex:1:1", 
+            "interaction:Pclass:Sex:3:0", 
+            "interaction:Pclass:Sex:2:1", 
+            "interaction:Pclass:FamilySize:3:0.0", 
+            "interaction:Pclass:FamilySize:1:0.4", 
+            "dummy:FamilySize:0.0", 
+            "dummy:FamilySize:0.4", 
+            "interaction:Pclass:Sex:2:0", 
+            "dummy:FamilySize:0.8", 
+            "dummy:FamilySize:__Others__", 
+            "dummy:FamilySize:1.2", 
+            "interaction:Pclass:FamilySize:3:2.0", 
+            "interaction:Pclass:FamilySize:1:0.0", 
+            "interaction:Pclass:Sex:3:1", 
+            "dummy:Pclass:__Others__", 
+            "dummy:Sex:N/A", 
+            "dummy:FamilySize:N/A", 
+            "interaction:Pclass:FamilySize:2:0.8", 
+            "interaction:Pclass:FamilySize:2:1.2", 
+            "interaction:Pclass:FamilySize:1:0.8"
+        ]
+    }, 
+    "method": "DROP"
+}

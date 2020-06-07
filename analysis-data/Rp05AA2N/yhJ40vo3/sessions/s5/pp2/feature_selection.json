@@ -1,0 +1,21 @@
+{
+    "selection_params": {
+        "kept_columns": [
+            "dummy:Sex:__Others__", 
+            "dummy:Sex:0", 
+            "dummy:FamilySize:0.0", 
+            "dummy:FamilySize:0.4", 
+            "dummy:FamilySize:0.8", 
+            "dummy:FamilySize:__Others__", 
+            "dummy:FamilySize:1.2", 
+            "dummy:Age:__Others__", 
+            "dummy:Age:1.0", 
+            "dummy:Age:3.0", 
+            "dummy:Age:2.0", 
+            "dummy:Age:N/A", 
+            "dummy:Sex:N/A", 
+            "dummy:FamilySize:N/A"
+        ]
+    }, 
+    "method": "DROP"
+}

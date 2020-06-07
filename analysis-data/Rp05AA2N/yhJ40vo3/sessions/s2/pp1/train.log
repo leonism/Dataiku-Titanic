@@ -1,0 +1,563 @@
+[2020/06/07-15:12:12.869] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/06/07-15:12:12.870] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.prediction]  - ** Start train session s2
+[2020/06/07-15:12:12.873] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/06/07-15:12:12.876] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.splits] T-yhJ40vo3 - [ct: 7] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=train_prepared,sel=(method=full),r=0.8,s=1337 i=3c55994e9c492290c7526f2cef4ab472-1
+[2020/06/07-15:12:12.881] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.data] T-yhJ40vo3 - [ct: 12] Need to compute sampleId before checking memory cache
+[2020/06/07-15:12:12.882] [FT-TrainWorkThread-SQT8bxOp-1995] [DEBUG] [dip.shaker.runner] T-yhJ40vo3 - [ct: 13] Script settings sampleMax=104857600 processedMax=-1
+[2020/06/07-15:12:12.884] [FT-TrainWorkThread-SQT8bxOp-1995] [DEBUG] [dip.shaker.runner] T-yhJ40vo3 - [ct: 15] Processing with sampleMax=104857600 processedMax=524288000
+[2020/06/07-15:12:12.885] [FT-TrainWorkThread-SQT8bxOp-1995] [DEBUG] [dip.shaker.runner] T-yhJ40vo3 - [ct: 16] Computed required sample id : 5bbc795689bda5f097e8ef913d179fb2-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce
+[2020/06/07-15:12:12.889] [FT-TrainWorkThread-SQT8bxOp-1995] [DEBUG] [dku.shaker.cache] T-yhJ40vo3 - Shaker MemoryCache get on TITANICDATAIKU.train_prepared key=ds=7977ac4c094cbb1dcc114ea550b84ac7--scr=62dd84eab80c6c61616d7931d8436cdc--samp=5bbc795689bda5f097e8ef913d179fb2-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce: hit
+[2020/06/07-15:12:12.890] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 21] Column Survived meaning=LongMeaning fail=0
+[2020/06/07-15:12:12.892] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 23] Column Pclass meaning=LongMeaning fail=0
+[2020/06/07-15:12:12.893] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 24] Column Title meaning=LongMeaning fail=0
+[2020/06/07-15:12:12.896] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 27] Column Sex meaning=LongMeaning fail=0
+[2020/06/07-15:12:12.897] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 28] Column Age meaning=DoubleMeaning fail=0
+[2020/06/07-15:12:12.900] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 31] Column FamilySize meaning=DoubleMeaning fail=0
+[2020/06/07-15:12:12.901] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 32] Column Fare meaning=DoubleMeaning fail=0
+[2020/06/07-15:12:12.904] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 35] Column Cabin meaning=DoubleMeaning fail=0
+[2020/06/07-15:12:12.906] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.shaker.schema] T-yhJ40vo3 - [ct: 37] Column Embarked meaning=LongMeaning fail=0
+[2020/06/07-15:12:12.913] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.datasets.file] T-yhJ40vo3 - [ct: 44] Building Filesystem handler config: {"connection":"filesystem_managed","path":"TITANICDATAIKU/train_prepared","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/07-15:12:12.915] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.datasets.ftplike] T-yhJ40vo3 - Enumerating Filesystem dataset prefix=
+[2020/06/07-15:12:12.918] [FT-TrainWorkThread-SQT8bxOp-1995] [DEBUG] [dku.fs.local] T-yhJ40vo3 - [ct: 49] Enumerating local filesystem prefix=/
+[2020/06/07-15:12:12.920] [FT-TrainWorkThread-SQT8bxOp-1995] [DEBUG] [dku.fs.local] T-yhJ40vo3 - [ct: 51] Enumeration done nb_paths=1 size=2033
+[2020/06/07-15:12:12.922] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.input.push] T-yhJ40vo3 - USTP: push selection.method=FULL records=100000 ratio=0.02 col=null
+[2020/06/07-15:12:12.923] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.format] T-yhJ40vo3 - [ct: 54] Extractor run: limit={"maxBytes":-1,"maxRecords":-1,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2020/06/07-15:12:12.926] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku] T-yhJ40vo3 - getCompression filename=**out-s0.csv.gz**
+[2020/06/07-15:12:12.929] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku] T-yhJ40vo3 - getCompression filename=**out-s0.csv.gz**
+[2020/06/07-15:12:12.930] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.format] T-yhJ40vo3 - [ct: 61] Start compressed [GZIP] stream: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/managed_datasets/TITANICDATAIKU/train_prepared/out-s0.csv.gz / totalRecsBefore=0
+[2020/06/07-15:12:12.932] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku] T-yhJ40vo3 - getCompression filename=**out-s0.csv.gz**
+[2020/06/07-15:12:12.933] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku] T-yhJ40vo3 - getCompression filename=**out-s0.csv.gz**
+[2020/06/07-15:12:12.949] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.format] T-yhJ40vo3 - [ct: 80] after stream totalComp=2033 totalUncomp=17683 totalRec=626
+[2020/06/07-15:12:12.950] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.format] T-yhJ40vo3 - [ct: 81] Extractor run done, totalCompressed=2033 totalRecords=626
+[2020/06/07-15:12:12.956] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.splits] T-yhJ40vo3 - [ct: 87] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=train_prepared,sel=(method=full),r=0.8,s=1337, instance id: 3c55994e9c492290c7526f2cef4ab472-1
+[2020/06/07-15:12:12.960] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.splits] T-yhJ40vo3 - [ct: 91] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=train_prepared,sel=(method=full),r=0.8,s=1337 i=3c55994e9c492290c7526f2cef4ab472-1
+[2020/06/07-15:12:12.964] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.splits] T-yhJ40vo3 - [ct: 95] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=train_prepared,sel=(method=full),r=0.8,s=1337 i=3c55994e9c492290c7526f2cef4ab472-1
+[2020/06/07-15:12:12.967] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.ml.python] T-yhJ40vo3 - Joining processing thread ...
+[2020/06/07-15:12:12.967] [MRT-1996] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp1 in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/TITANICDATAIKU/Rp05AA2N/yhJ40vo3/sessions/s2/pp1
+[2020/06/07-15:12:12.972] [MRT-1996] [INFO] [dku.block.link]  - Started a socket on port 55108
+[2020/06/07-15:12:12.975] [MRT-1996] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/TITANICDATAIKU/Rp05AA2N/yhJ40vo3/sessions/s2/pp1/train.log
+[2020/06/07-15:12:12.976] [MRT-1996] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2020/06/07-15:12:12.979] [MRT-1996] [WARN] [dku.code.projectLibs]  - External libraries file not found: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/TITANICDATAIKU/lib/external-libraries.json
+[2020/06/07-15:12:12.982] [MRT-1996] [INFO] [dku.code.projectLibs]  - EXTERNAL LIBS FROM TITANICDATAIKU is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/06/07-15:12:12.984] [MRT-1996] [INFO] [dku.code.projectLibs]  - chunkFolder is /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/TITANICDATAIKU/lib/R
+[2020/06/07-15:12:12.987] [MRT-1996] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2020/06/07-15:12:12.991] [MRT-1996] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-TITANICDATAIKU-i5yKtyq on behalf of admin id=analysis-ml-TITANICDATAIKU-i5yKtyq_BTbqnsx6lCnx
+[2020/06/07-15:12:12.991] [MRT-1996] [INFO] [dku.security.process]  - Starting process (regular)
+[2020/06/07-15:12:13.013] [MRT-1996] [INFO] [dku.security.process]  - Process started with pid=4406
+[2020/06/07-15:12:13.014] [MRT-1996] [INFO] [dku.processes.cgroups]  - Will use cgroups []
+[2020/06/07-15:12:13.015] [MRT-1996] [INFO] [dku.processes.cgroups]  - Applying rules to used cgroups: []
+Installing debugging signal handler
+[2020-06-07 15:12:18,324] [4406/MainThread] [INFO] [root] Connecting to parent at port 55108
+[2020-06-07 15:12:18,326] [4406/MainThread] [INFO] [root] Connected to parent at port 55108
+[2020/06/07-15:12:18.327] [MRT-1996] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2020/06/07-15:12:18.331] [MRT-1996] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+[2020-06-07 15:12:21,778] [4406/MainThread] [INFO] [root] Running analysis command: train_prediction_models_nosave
+[2020-06-07 15:12:21,782] [4406/MainThread] [INFO] [dataiku.doctor.commands] PPS is {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [{u'mappedValue': 0, u'sourceValue': u'0', u'sampleFreq': 379}, {u'mappedValue': 1, u'sourceValue': u'1', u'sampleFreq': 247}], u'per_feature': {u'Fare': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Embarked': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Age': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Title': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Pclass': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Sex': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'FamilySize': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Survived': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Cabin': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'ENABLED_MANUAL'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'ENABLED_MANUAL'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-06-07 15:12:21,783] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading train set
+[2020-06-07 15:12:21,784] [4406/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-06-07 15:12:21,784] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Survived: <type 'numpy.object_'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2020-06-07 15:12:21,784] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pclass: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,784] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Title: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,785] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Sex: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,785] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Age: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,785] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for FamilySize: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,785] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Fare: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,785] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Cabin: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,785] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Embarked: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,785] [4406/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Fare': 'str', u'Title': 'str', u'Age': 'str', u'Embarked': 'str', u'Pclass': 'str', u'Sex': 'str', u'FamilySize': 'str', u'Survived': <type 'numpy.object_'>, u'Cabin': 'str'}
+[2020-06-07 15:12:21,837] [4406/MainThread] [INFO] [root] Loaded table
+[2020-06-07 15:12:21,842] [4406/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-06-07 15:12:21,842] [4406/MainThread] [INFO] [dataiku.doctor.commands] Loaded train df: shape=(496,9)
+[2020-06-07 15:12:21,843] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Survived (object)
+[2020-06-07 15:12:21,843] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Pclass (object)
+[2020-06-07 15:12:21,843] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Title (object)
+[2020-06-07 15:12:21,843] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Sex (object)
+[2020-06-07 15:12:21,843] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Age (object)
+[2020-06-07 15:12:21,844] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : FamilySize (object)
+[2020-06-07 15:12:21,844] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Fare (object)
+[2020-06-07 15:12:21,844] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Cabin (object)
+[2020-06-07 15:12:21,844] [4406/MainThread] [INFO] [dataiku.doctor.commands] Train col : Embarked (object)
+[2020-06-07 15:12:21,844] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading train set
+[2020-06-07 15:12:21,844] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading test set
+[2020-06-07 15:12:21,846] [4406/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-06-07 15:12:21,846] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Survived: <type 'numpy.object_'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2020-06-07 15:12:21,846] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pclass: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,846] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Title: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,847] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Sex: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,847] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Age: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,847] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for FamilySize: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,847] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Fare: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,848] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Cabin: str (schema_type=double feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,848] [4406/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Embarked: str (schema_type=bigint feature_type=CATEGORY feature_role=INPUT)
+[2020-06-07 15:12:21,848] [4406/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Fare': 'str', u'Title': 'str', u'Age': 'str', u'Embarked': 'str', u'Pclass': 'str', u'Sex': 'str', u'FamilySize': 'str', u'Survived': <type 'numpy.object_'>, u'Cabin': 'str'}
+[2020-06-07 15:12:21,856] [4406/MainThread] [INFO] [root] Loaded table
+[2020-06-07 15:12:21,857] [4406/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-06-07 15:12:21,857] [4406/MainThread] [INFO] [dataiku.doctor.commands] Loaded test df: shape=(130,9)
+[2020-06-07 15:12:21,857] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading test set
+[2020-06-07 15:12:21,857] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2020-06-07 15:12:21,858] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Fare... (type=CATEGORY)
+[2020-06-07 15:12:21,874] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Embarked... (type=CATEGORY)
+[2020-06-07 15:12:21,878] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Age... (type=CATEGORY)
+[2020-06-07 15:12:21,884] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Title... (type=CATEGORY)
+[2020-06-07 15:12:21,888] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Pclass... (type=CATEGORY)
+[2020-06-07 15:12:21,893] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Sex... (type=CATEGORY)
+[2020-06-07 15:12:21,898] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at FamilySize... (type=CATEGORY)
+[2020-06-07 15:12:21,902] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Survived... (type=NUMERIC)
+[2020-06-07 15:12:21,902] [4406/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Cabin... (type=CATEGORY)
+[2020-06-07 15:12:21,908] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2020-06-07 15:12:21,908] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] generating interactions
+[2020-06-07 15:12:21,909] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [{u'mappedValue': 0, u'sourceValue': u'0', u'sampleFreq': 379}, {u'mappedValue': 1, u'sourceValue': u'1', u'sampleFreq': 247}], u'per_feature': {u'Fare': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Embarked': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Age': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Title': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Pclass': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Sex': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'FamilySize': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}, u'Survived': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Cabin': {u'min_samples': 10, u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'max_nb_categories': 100, u'dummy_clip': u'CUMULATIVE_PROPORTION', u'role': u'INPUT', u'max_cat_safety': 200, u'missing_impute_with': u'MODE', u'type': u'CATEGORY', u'dummy_drop': u'DROP', u'impute_constant_value': u'0'}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'ENABLED_MANUAL'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'ENABLED_MANUAL'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-06-07 15:12:21,909] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] No feature selection to perform
+[2020-06-07 15:12:21,909] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing train set
+[2020-06-07 15:12:21,910] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 496
+[2020-06-07 15:12:21,911] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RemapValueToOutput
+[2020-06-07 15:12:21,922] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-06-07 15:12:21,923] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-06-07 15:12:21,923] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-06-07 15:12:21,923] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-06-07 15:12:21,923] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Fare': '0.0', u'Title': '0', u'Age': '2.0', u'Embarked': '0', u'Pclass': '3', u'Sex': '0', u'FamilySize': '0.0', u'Cabin': '1.2055'}
+[2020-06-07 15:12:21,931] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Fare)
+[2020-06-07 15:12:21,938] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 4) nnz=462
+[2020-06-07 15:12:21,939] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Embarked)
+[2020-06-07 15:12:21,944] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 3) nnz=456
+[2020-06-07 15:12:21,945] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Age)
+[2020-06-07 15:12:21,951] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 4) nnz=437
+[2020-06-07 15:12:21,951] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Title)
+[2020-06-07 15:12:21,955] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 4) nnz=458
+[2020-06-07 15:12:21,955] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Pclass)
+[2020-06-07 15:12:21,959] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 3) nnz=403
+[2020-06-07 15:12:21,959] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Sex)
+[2020-06-07 15:12:21,966] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 2) nnz=323
+[2020-06-07 15:12:21,966] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (FamilySize)
+[2020-06-07 15:12:21,971] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 5) nnz=464
+[2020-06-07 15:12:21,971] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Cabin)
+[2020-06-07 15:12:21,977] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(496, 5) nnz=463
+[2020-06-07 15:12:21,977] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-06-07 15:12:21,977] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-06-07 15:12:21,977] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-06-07 15:12:21,978] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-06-07 15:12:21,979] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RealignTarget
+[2020-06-07 15:12:21,979] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (496,)
+[2020-06-07 15:12:21,982] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (496,)
+[2020-06-07 15:12:21,982] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-06-07 15:12:21,983] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-06-07 15:12:21,983] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (496, 30) target before = (496,)
+[2020-06-07 15:12:21,984] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-06-07 15:12:22,011] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(496, 9)
+[2020-06-07 15:12:22,011] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (496, 30) target after = (496,)
+[2020-06-07 15:12:22,011] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-06-07 15:12:22,011] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-06-07 15:12:22,011] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (496, 9) 
+[2020-06-07 15:12:22,012] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(496, 30) 
+[2020-06-07 15:12:22,013] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-06-07 15:12:22,013] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((496,))
+[2020-06-07 15:12:22,013] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-06-07 15:12:22,014] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 496
+[2020-06-07 15:12:22,014] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-06-07 15:12:22,014] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-06-07 15:12:22,014] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (496, 9) 
+[2020-06-07 15:12:22,014] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-06-07 15:12:22,014] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-06-07 15:12:22,014] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((496, 9))
+[2020-06-07 15:12:22,014] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((496, 30))
+[2020-06-07 15:12:22,015] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((496,))
+[2020-06-07 15:12:22,017] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing train set
+[2020-06-07 15:12:22,017] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing test set
+[2020-06-07 15:12:22,018] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 130
+[2020-06-07 15:12:22,019] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RemapValueToOutput
+[2020-06-07 15:12:22,021] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-06-07 15:12:22,021] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-06-07 15:12:22,021] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-06-07 15:12:22,021] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-06-07 15:12:22,021] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Fare': '0.0', u'Title': '0', u'Age': '2.0', u'Embarked': '0', u'Pclass': '3', u'Sex': '0', u'FamilySize': '0.0', u'Cabin': '1.2055'}
+[2020-06-07 15:12:22,028] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Fare)
+[2020-06-07 15:12:22,034] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 4) nnz=125
+[2020-06-07 15:12:22,034] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Embarked)
+[2020-06-07 15:12:22,039] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 3) nnz=118
+[2020-06-07 15:12:22,039] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Age)
+[2020-06-07 15:12:22,042] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 4) nnz=121
+[2020-06-07 15:12:22,042] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Title)
+[2020-06-07 15:12:22,047] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 4) nnz=123
+[2020-06-07 15:12:22,047] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Pclass)
+[2020-06-07 15:12:22,054] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 3) nnz=95
+[2020-06-07 15:12:22,054] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Sex)
+[2020-06-07 15:12:22,058] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 2) nnz=85
+[2020-06-07 15:12:22,058] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (FamilySize)
+[2020-06-07 15:12:22,066] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 5) nnz=123
+[2020-06-07 15:12:22,066] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Cabin)
+[2020-06-07 15:12:22,072] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(130, 5) nnz=122
+[2020-06-07 15:12:22,073] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-06-07 15:12:22,073] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-06-07 15:12:22,073] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-06-07 15:12:22,073] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-06-07 15:12:22,073] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RealignTarget
+[2020-06-07 15:12:22,073] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (130,)
+[2020-06-07 15:12:22,075] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (130,)
+[2020-06-07 15:12:22,086] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-06-07 15:12:22,087] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-06-07 15:12:22,087] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (130, 30) target before = (130,)
+[2020-06-07 15:12:22,089] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-06-07 15:12:22,102] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(130, 9)
+[2020-06-07 15:12:22,102] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (130, 30) target after = (130,)
+[2020-06-07 15:12:22,102] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-06-07 15:12:22,102] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-06-07 15:12:22,102] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (130, 9) 
+[2020-06-07 15:12:22,102] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(130, 30) 
+[2020-06-07 15:12:22,103] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-06-07 15:12:22,104] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((130,))
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-06-07 15:12:22,105] [4406/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 130
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (130, 9) 
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((130, 9))
+[2020-06-07 15:12:22,105] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((130, 30))
+[2020-06-07 15:12:22,106] [4406/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((130,))
+[2020-06-07 15:12:22,106] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing test set
+[2020-06-07 15:12:22,108] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Grid searching
+[2020-06-07 15:12:22,115] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(496,30) tn=14880 nnz=3466 fill_ratio=0.23
+[2020-06-07 15:12:22,115] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-06-07 15:12:22,117] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] Create CLF from params: {u'computeLearningCurves': False, u'algorithm': u'LOGISTIC_REGRESSION', u'logit_grid': {u'penalty': {u'values': {u'l2': {u'enabled': False}, u'l1': {u'enabled': True}}}, u'multi_class': u'ovr', u'C': {u'gridMode': u'EXPLICIT', u'values': [0.01, 0.1, 1.0, 10.0, 100.0], u'nValues': 0}, u'n_jobs': 2, u'enabled': True}, u'autoOptimizeThreshold': True, u'gridLength': 5, u'metrics': {u'customEvaluationMetricGIB': True, u'customEvaluationMetricNeedsProba': False, u'thresholdOptimizationMetric': u'F1', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'evaluationMetric': u'ROC_AUC'}, u'forcedClassifierThreshold': 0.0, u'skipExpensiveReports': False, u'max_ensemble_nodes_serialized': 0, u'pluginAlgoCustomGridSearch': False, u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}} for algorithm LOGISTIC_REGRESSION
+[2020-06-07 15:12:22,118] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] Using stratified K-Fold CV with k=3
+[2020-06-07 15:12:22,118] [4406/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.HyperparametersSpace object at 0x114566d10>
+[2020-06-07 15:12:22,124] [4406/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fitting 3 folds for each of 5 candidates, totalling 15 fits
+[Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020-06-07 15:12:22,148] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=0: penalty=l1, C=0.1 ...............................................
+[2020-06-07 15:12:22,153] [4406/GS-123145544470528] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=1: penalty=l1, C=0.1 ...............................................
+[2020-06-07 15:12:22,165] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=2: penalty=l1, C=0.1 ...............................................
+[2020-06-07 15:12:22,189] [4406/GS-123145552883712] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=4 s=0: penalty=l1, C=100.0 .............................................
+[2020-06-07 15:12:22,202] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=2: penalty=l1, C=0.1 (ft=0.0s st=0.0s sc=0.838613406795)
+[2020-06-07 15:12:22,209] [4406/GS-123145544470528] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=1: penalty=l1, C=0.1 (ft=0.0s st=0.0s sc=0.785965717784)
+[2020-06-07 15:12:22,220] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=4 s=1: penalty=l1, C=100.0 .............................................
+[2020-06-07 15:12:22,227] [4406/GS-123145544470528] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=4 s=2: penalty=l1, C=100.0 .............................................
+[2020-06-07 15:12:22,234] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=0: penalty=l1, C=0.1 (ft=0.0s st=0.1s sc=0.861827227499)
+[2020-06-07 15:12:22,246] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=2 s=0: penalty=l1, C=1.0 ...............................................
+[2020-06-07 15:12:22,274] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=2 s=0: penalty=l1, C=1.0 (ft=0.0s st=0.0s sc=0.865596261119)
+[2020-06-07 15:12:22,277] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=2 s=1: penalty=l1, C=1.0 ...............................................
+[2020-06-07 15:12:22,283] [4406/GS-123145552883712] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=4 s=0: penalty=l1, C=100.0 (ft=0.0s st=0.1s sc=0.8285089703)
+[2020-06-07 15:12:22,290] [4406/GS-123145552883712] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=2 s=2: penalty=l1, C=1.0 ...............................................
+[2020-06-07 15:12:22,304] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=2 s=1: penalty=l1, C=1.0 (ft=0.0s st=0.0s sc=0.819329660239)
+[2020-06-07 15:12:22,309] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=3 s=0: penalty=l1, C=10.0 ..............................................
+[2020-06-07 15:12:22,354] [4406/GS-123145544470528] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=4 s=2: penalty=l1, C=100.0 (ft=0.1s st=0.0s sc=0.864248546067)
+[2020-06-07 15:12:22,357] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=3 s=0: penalty=l1, C=10.0 (ft=0.0s st=0.0s sc=0.83386099804)
+[2020-06-07 15:12:22,367] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=3 s=1: penalty=l1, C=10.0 ..............................................
+[2020-06-07 15:12:22,374] [4406/GS-123145552883712] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=2 s=2: penalty=l1, C=1.0 (ft=0.0s st=0.1s sc=0.867845117845)
+[2020-06-07 15:12:22,378] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=4 s=1: penalty=l1, C=100.0 (ft=0.1s st=0.1s sc=0.823767982859)
+[2020-06-07 15:12:22,384] [4406/GS-123145552883712] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=3 s=2: penalty=l1, C=10.0 ..............................................
+[2020-06-07 15:12:22,398] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=0: penalty=l1, C=0.01 ..............................................
+[2020-06-07 15:12:22,401] [4406/GS-123145544470528] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=1: penalty=l1, C=0.01 ..............................................
+[2020-06-07 15:12:22,426] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=0: penalty=l1, C=0.01 (ft=0.0s st=0.0s sc=0.5)
+[2020-06-07 15:12:22,431] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=2: penalty=l1, C=0.01 ..............................................
+[2020-06-07 15:12:22,446] [4406/GS-123145540263936] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=3 s=1: penalty=l1, C=10.0 (ft=0.0s st=0.1s sc=0.824533210897)
+[2020-06-07 15:12:22,450] [4406/GS-123145552883712] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=3 s=2: penalty=l1, C=10.0 (ft=0.0s st=0.0s sc=0.867615549434)
+[2020-06-07 15:12:22,452] [4406/GS-123145544470528] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=1: penalty=l1, C=0.01 (ft=0.0s st=0.0s sc=0.5)
+[2020-06-07 15:12:22,456] [4406/GS-123145548677120] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=2: penalty=l1, C=0.01 (ft=0.0s st=0.0s sc=0.5)
+[Parallel(n_jobs=4)]: Done  15 out of  15 | elapsed:    0.3s finished
+[2020-06-07 15:12:23,163] [4406/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search ended, got 15 scores out of 15
+[2020-06-07 15:12:23,165] [4406/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search done, best_parameters being : {'penalty': u'l1', 'C': 1.0}
+[2020-06-07 15:12:23,168] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Grid searching
+[2020-06-07 15:12:23,169] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2020-06-07 15:12:23,170] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] Fitting model:
+[2020-06-07 15:12:23,171] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common]   Model is: LogisticRegression(C=1.0,
+          class_weight={0: 0.835016835016835, 1: 1.2462311557788945},
+          dual=False, fit_intercept=True, intercept_scaling=1,
+          max_iter=100, multi_class=u'ovr', n_jobs=None, penalty=u'l1',
+          random_state=1337, solver='liblinear', tol=0.0001, verbose=0,
+          warm_start=False)
+[2020-06-07 15:12:23,171] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X class: <type 'numpy.ndarray'>
+[2020-06-07 15:12:23,171] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X shape: (496, 30)
+[2020-06-07 15:12:23,171] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_y shape: (496,)
+[2020-06-07 15:12:23,181] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] LR Params are {'warm_start': False, 'C': 1.0, 'n_jobs': None, 'verbose': 0, 'intercept_scaling': 1, 'fit_intercept': True, 'max_iter': 100, 'penalty': u'l1', 'multi_class': u'ovr', 'random_state': 1337, 'dual': False, 'tol': 0.0001, 'solver': 'liblinear', 'class_weight': {0: 0.835016835016835, 1: 1.2462311557788945}} 
+[2020-06-07 15:12:23,181] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] Output params are {'resolved': {'logit': {'penalty': u'l1', 'multi_class': u'ovr', 'C': 1.0}, 'skipExpensiveReports': False, 'algorithm': u'LOGISTIC_REGRESSION'}, 'other': {}}
+[2020-06-07 15:12:23,181] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2020-06-07 15:12:23,182] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2020-06-07 15:12:23,184] [4406/MainThread] [INFO] [dataiku.doctor.prediction_entrypoints] PICKLING LogisticRegression(C=1.0,
+          class_weight={0: 0.835016835016835, 1: 1.2462311557788945},
+          dual=False, fit_intercept=True, intercept_scaling=1,
+          max_iter=100, multi_class=u'ovr', n_jobs=None, penalty=u'l1',
+          random_state=1337, solver='liblinear', tol=0.0001, verbose=0,
+          warm_start=False)
+[2020-06-07 15:12:23,186] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2020-06-07 15:12:23,186] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2020-06-07 15:12:23,187] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Intrinsic scoring
+[2020-06-07 15:12:23,187] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Computing regression coeffs
+[2020-06-07 15:12:23,188] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] FEATURES 30 CLF COEF 30
+[2020-06-07 15:12:23,188] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CLF Intercept: [0.43547191]
+[2020-06-07 15:12:23,191] [4406/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Coefs: [ 0.43547191  0.          0.04846399  0.          0.          0.
+  0.68199718  0.          0.04946458  0.         -0.49326642  0.
+ -1.88526546  0.          0.1564376   0.         -0.72441514  0.6767987
+  0.         -0.8547157   0.          1.40140298  1.30103272  1.65879276
+  1.4315111   0.         -0.28140473 -0.14125485  0.04690556  1.16770554
+  0.        ]
+[2020-06-07 15:12:23,191] [4406/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Sample variance: 0.6005280481462278
+[2020-06-07 15:12:23,192] [4406/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Diagonal in information_matrix computation:   (0, 0)	0.10425190374145414
+  (1, 1)	0.06080030115142011
+  (2, 2)	0.11660399606227556
+  (3, 3)	0.15628380386392618
+  (4, 4)	0.16884221661595167
+  (5, 5)	0.11493365995703628
+  (6, 6)	0.11243433412472363
+  (7, 7)	0.21135710548834113
+  (8, 8)	0.17611151724680432
+  (9, 9)	0.15628380386392618
+  (10, 10)	0.12890010330713086
+  (11, 11)	0.20946602447941468
+  (12, 12)	0.21135710548834113
+  (13, 13)	0.24551059583859666
+  (14, 14)	0.12445098654203549
+  (15, 15)	0.11660399606227556
+  (16, 16)	0.032804077601630614
+  (17, 17)	0.20718002421024007
+  (18, 18)	0.17937272514822725
+  (19, 19)	0.19176054909283233
+  (20, 20)	0.1800442005982964
+  (21, 21)	0.1884519700907206
+  (22, 22)	0.2405501007713334
+  (23, 23)	0.13414657911824396
+  (24, 24)	0.08173863744022174
+  :	:
+  (471, 471)	0.03734104186519031
+  (472, 472)	0.12432079699068346
+  (473, 473)	0.0724071015473395
+  (474, 474)	0.185652607849316
+  (475, 475)	0.09323712594529476
+  (476, 476)	0.23785708421407692
+  (477, 477)	0.13064203967099397
+  (478, 478)	0.1800442005982964
+  (479, 479)	0.16975270814185725
+  (480, 480)	0.09147593598489552
+  (481, 481)	0.17937272514822725
+  (482, 482)	0.24897274977493297
+  (483, 483)	0.24661651736276624
+  (484, 484)	0.07113868416315046
+  (485, 485)	0.14791137779671604
+  (486, 486)	0.11243433412472363
+  (487, 487)	0.11243433412472363
+  (488, 488)	0.06080030115142011
+  (489, 489)	0.13869453407460156
+  (490, 490)	0.11660399606227556
+  (491, 491)	0.18406968217341382
+  (492, 492)	0.11243433412472363
+  (493, 493)	0.20487685228782743
+  (494, 494)	0.20457620174763702
+  (495, 495)	0.24190287561149384
+[2020-06-07 15:12:23,197] [4406/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Singular variance matrix
+[2020-06-07 15:12:23,197] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Fare:2.0 i=0.04846399412828474
+[2020-06-07 15:12:23,197] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Embarked:1 i=0.6819971841831621
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Age:2.0 i=0.04946457776220742
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Age:3.0 i=-0.49326642233082224
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Title:0 i=-1.8852654589660474
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Title:2 i=0.15643760223891728
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Pclass:3 i=-0.7244151364398845
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Pclass:1 i=0.6767986952830576
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Sex:0 i=-0.8547156971240588
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:FamilySize:0.0 i=1.401402975086943
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:FamilySize:0.4 i=1.3010327206545902
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:FamilySize:0.8 i=1.6587927623128327
+[2020-06-07 15:12:23,198] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:FamilySize:1.2 i=1.4315111005509396
+[2020-06-07 15:12:23,199] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Cabin:1.2055 i=-0.2814047325351838
+[2020-06-07 15:12:23,199] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Cabin:0.8 i=-0.14125485286929307
+[2020-06-07 15:12:23,199] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Cabin:0.4 i=0.04690555806036125
+[2020-06-07 15:12:23,199] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] V=dummy:Cabin:1.6 i=1.1677055418166422
+[2020-06-07 15:12:23,199] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Extracting rescalers
+[2020-06-07 15:12:23,201] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(130,30) tn=3900 nnz=912 fill_ratio=0.23
+[2020-06-07 15:12:23,201] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-06-07 15:12:23,201] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Probas raw shape 130/2 target_map=2
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/metrics/classification.py:543: RuntimeWarning: invalid value encountered in double_scalars
+  mcc = cov_ytyp / np.sqrt(cov_ytyt * cov_ypyp)
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+[2020-06-07 15:12:23,504] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Starting threshold optim
+[2020-06-07 15:12:23,507] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.000000 score 0.539326 (pred_true=130)
+[2020-06-07 15:12:23,510] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.025000 score 0.539326 (pred_true=130)
+[2020-06-07 15:12:23,513] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.050000 score 0.542373 (pred_true=129)
+[2020-06-07 15:12:23,517] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.075000 score 0.542373 (pred_true=129)
+[2020-06-07 15:12:23,520] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.100000 score 0.552941 (pred_true=122)
+[2020-06-07 15:12:23,522] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.125000 score 0.571429 (pred_true=113)
+[2020-06-07 15:12:23,524] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.150000 score 0.627737 (pred_true=89)
+[2020-06-07 15:12:23,527] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.175000 score 0.651515 (pred_true=84)
+[2020-06-07 15:12:23,529] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.200000 score 0.656489 (pred_true=83)
+[2020-06-07 15:12:23,531] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.225000 score 0.666667 (pred_true=81)
+[2020-06-07 15:12:23,536] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.250000 score 0.713043 (pred_true=67)
+[2020-06-07 15:12:23,539] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.275000 score 0.725664 (pred_true=65)
+[2020-06-07 15:12:23,542] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.300000 score 0.740741 (pred_true=60)
+[2020-06-07 15:12:23,544] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.325000 score 0.740741 (pred_true=60)
+[2020-06-07 15:12:23,548] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.350000 score 0.747664 (pred_true=59)
+[2020-06-07 15:12:23,550] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.375000 score 0.761905 (pred_true=57)
+[2020-06-07 15:12:23,551] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.400000 score 0.761905 (pred_true=57)
+[2020-06-07 15:12:23,554] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.425000 score 0.769231 (pred_true=56)
+[2020-06-07 15:12:23,556] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.450000 score 0.764706 (pred_true=54)
+[2020-06-07 15:12:23,559] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.475000 score 0.764706 (pred_true=54)
+[2020-06-07 15:12:23,561] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.500000 score 0.772277 (pred_true=53)
+[2020-06-07 15:12:23,565] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.525000 score 0.772277 (pred_true=53)
+[2020-06-07 15:12:23,567] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.550000 score 0.787879 (pred_true=51)
+[2020-06-07 15:12:23,570] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.575000 score 0.783505 (pred_true=49)
+[2020-06-07 15:12:23,573] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.600000 score 0.795699 (pred_true=45)
+[2020-06-07 15:12:23,576] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.625000 score 0.800000 (pred_true=42)
+[2020-06-07 15:12:23,578] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.650000 score 0.786517 (pred_true=41)
+[2020-06-07 15:12:23,581] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.675000 score 0.786517 (pred_true=41)
+[2020-06-07 15:12:23,583] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.700000 score 0.761905 (pred_true=36)
+[2020-06-07 15:12:23,586] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.725000 score 0.716049 (pred_true=33)
+[2020-06-07 15:12:23,588] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.750000 score 0.683544 (pred_true=31)
+[2020-06-07 15:12:23,590] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.775000 score 0.649351 (pred_true=29)
+[2020-06-07 15:12:23,593] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.800000 score 0.631579 (pred_true=28)
+[2020-06-07 15:12:23,597] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.825000 score 0.613333 (pred_true=27)
+[2020-06-07 15:12:23,599] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.850000 score 0.558824 (pred_true=20)
+[2020-06-07 15:12:23,601] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.875000 score 0.492308 (pred_true=17)
+[2020-06-07 15:12:23,603] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.900000 score 0.419355 (pred_true=14)
+[2020-06-07 15:12:23,605] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.925000 score 0.338983 (pred_true=11)
+[2020-06-07 15:12:23,608] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.950000 score 0.117647 (pred_true=3)
+[2020-06-07 15:12:23,611] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.975000 score 0.000000 (pred_true=0)
+[2020-06-07 15:12:23,611] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Selected threshold 0.625 
+[2020-06-07 15:12:23,617] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] preds 0      1
+1      0
+2      0
+3      1
+4      0
+5      0
+6      1
+7      0
+8      0
+9      1
+10     0
+11     0
+12     1
+13     0
+14     0
+15     0
+16     0
+17     1
+18     0
+19     0
+20     0
+21     0
+22     0
+23     0
+24     1
+25     1
+26     0
+27     0
+28     0
+29     0
+      ..
+100    1
+101    0
+102    1
+103    0
+104    0
+105    0
+106    0
+107    1
+108    0
+109    0
+110    0
+111    0
+112    0
+113    0
+114    0
+115    0
+116    1
+117    0
+118    0
+119    0
+120    0
+121    0
+122    1
+123    0
+124    1
+125    0
+126    0
+127    0
+128    0
+129    1
+Name: predicted, Length: 130, dtype: int64
+[2020-06-07 15:12:23,618] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MAPPED SHAPE 130
+[2020-06-07 15:12:23,618] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] k=1 v=1
+[2020-06-07 15:12:23,619] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Mask data [ True False False  True False False  True False False  True False False
+  True False False False False  True False False False False False False
+  True  True False False False False False  True False False  True False
+ False  True False  True  True  True  True False  True  True  True  True
+ False False False False False  True False False  True  True False False
+ False  True  True False False False False False False  True False False
+  True False  True  True False False  True False  True  True False  True
+ False False False  True False False False False  True False False  True
+ False False False False  True False  True False False False False  True
+ False False False False False False False False  True False False False
+ False False  True False  True False False False False  True]
+[2020-06-07 15:12:23,620] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] mapped pred <type 'numpy.ndarray'>
+[2020-06-07 15:12:23,620] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] k=0 v=0
+[2020-06-07 15:12:23,621] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Mask data [False  True  True False  True  True False  True  True False  True  True
+ False  True  True  True  True False  True  True  True  True  True  True
+ False False  True  True  True  True  True False  True  True False  True
+  True False  True False False False False  True False False False False
+  True  True  True  True  True False  True  True False False  True  True
+  True False False  True  True  True  True  True  True False  True  True
+ False  True False False  True  True False  True False False  True False
+  True  True  True False  True  True  True  True False  True  True False
+  True  True  True  True False  True False  True  True  True  True False
+  True  True  True  True  True  True  True  True False  True  True  True
+  True  True False  True False  True  True  True  True False]
+[2020-06-07 15:12:23,621] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] mapped pred <type 'numpy.ndarray'>
+[2020-06-07 15:12:23,622] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MAPPED PREDS [u'1' u'0' u'0' u'1' u'0' u'0' u'1' u'0' u'0' u'1' u'0' u'0' u'1' u'0'
+ u'0' u'0' u'0' u'1' u'0' u'0' u'0' u'0' u'0' u'0' u'1' u'1' u'0' u'0'
+ u'0' u'0' u'0' u'1' u'0' u'0' u'1' u'0' u'0' u'1' u'0' u'1' u'1' u'1'
+ u'1' u'0' u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'0' u'0' u'1' u'0' u'0'
+ u'1' u'1' u'0' u'0' u'0' u'1' u'1' u'0' u'0' u'0' u'0' u'0' u'0' u'1'
+ u'0' u'0' u'1' u'0' u'1' u'1' u'0' u'0' u'1' u'0' u'1' u'1' u'0' u'1'
+ u'0' u'0' u'0' u'1' u'0' u'0' u'0' u'0' u'1' u'0' u'0' u'1' u'0' u'0'
+ u'0' u'0' u'1' u'0' u'1' u'0' u'0' u'0' u'0' u'1' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'1' u'0' u'0' u'0' u'0' u'0' u'1' u'0' u'1' u'0'
+ u'0' u'0' u'0' u'1']
+[2020-06-07 15:12:23,633] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] Total true rate = 48 / 130
+[2020-06-07 15:12:23,634] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] Computing lift on first 52 rows
+[2020-06-07 15:12:23,635] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] True rate on considered : 52 / 39
+[2020-06-07 15:12:23,636] [4406/MainThread] [INFO] [dataiku.doctor.prediction.common] Lift = 2.031250
+[2020-06-07 15:12:23,809] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for 0 (id 0)
+[2020-06-07 15:12:23,809] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (130,)
+[2020-06-07 15:12:23,810] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((130,))
+[2020-06-07 15:12:23,813] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (130,)
+[2020-06-07 15:12:23,813] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-06-07 15:12:23,817] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.86523418 0.37834106 0.1727468  0.45714461 0.87651475 0.86523418
+ 0.87089846 0.86168469 0.91699434 0.56910827 0.89518212 0.4007779
+ 0.70654389 0.76449159 0.83909859 0.5203571  0.17429761 0.87651475
+ 0.756769   0.87089846 0.62735431 0.76575793 0.76449159 0.30342204
+ 0.47324613 0.84261    0.86523418 0.80539918 0.91699434 0.88176969
+ 0.63884346 0.86523418 0.87089846 0.88176969 0.8385758  0.87651475
+ 0.41001598 0.86523418 0.756769   0.73125097 0.76449159 0.41634675
+ 0.66175166 0.91699434 0.72502764 0.86523418 0.16540023 0.76449159
+ 0.87089846 0.89518212 0.91699434 0.70633638 0.87651475 0.30342204
+ 0.3898051  0.87089846 0.79769077 0.87089846 0.77328062 0.84261
+ 0.57886061 0.84261    0.86523418 0.86523418 0.76575793 0.76575793
+ 0.86523418 0.70239165 0.71355953 0.86523418 0.86523418 0.91699434
+ 0.06490329 0.86168469 0.76575793 0.44429484 0.86523418 0.91699434
+ 0.96129827 0.76449159 0.79844434 0.87089846]
+[2020-06-07 15:12:23,817] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (82,)
+[2020-06-07 15:12:23,823] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for 1 (id 1)
+[2020-06-07 15:12:23,826] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (130,)
+[2020-06-07 15:12:23,826] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((130,))
+[2020-06-07 15:12:23,831] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (130,)
+[2020-06-07 15:12:23,831] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-06-07 15:12:23,832] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.92597296 0.79735584 0.243231   0.29760835 0.84037247 0.82570239
+ 0.69657796 0.13476582 0.69657796 0.23424207 0.92597296 0.75366788
+ 0.69657796 0.94296571 0.95495684 0.95090844 0.70692988 0.87753564
+ 0.86257869 0.74311145 0.55816771 0.12910154 0.95669848 0.08300566
+ 0.91450907 0.85970717 0.57700847 0.83270695 0.82392367 0.72859238
+ 0.88275295 0.88521574 0.9455169  0.63918407 0.93404168 0.91225172
+ 0.6101949  0.85094294 0.44366334 0.11823031 0.92597296 0.70692988
+ 0.77182436 0.70692988 0.92619129 0.13476582 0.84404067 0.91237616]
+[2020-06-07 15:12:23,832] [4406/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (48,)
+[2020-06-07 15:12:23,875] [4406/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2020/06/07-15:12:23.876] [MRT-1996] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2020/06/07-15:12:23.878] [MRT-1996] [INFO] [dku.analysis.prediction]  - Training returned ok
+[2020/06/07-15:12:23.879] [MRT-1996] [INFO] [dku.ml.versioning]  - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/TITANICDATAIKU/Rp05AA2N/yhJ40vo3/sessions/s2/pp1/m1
+[2020/06/07-15:12:23.891] [KNL-python-single-command-kernel-out-2005] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/06/07-15:12:23.892] [KNL-python-single-command-kernel-err-2006] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/06/07-15:12:23.911] [KNL-python-single-command-kernel-monitor-2004] [INFO] [dku.kernels]  - Process done with code 143
+[2020/06/07-15:12:23.913] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.ml.python] T-yhJ40vo3 - Processing thread joined ...
+[2020/06/07-15:12:23.915] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.ml.python] T-yhJ40vo3 - Joining processing thread ...
+[2020/06/07-15:12:23.916] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.ml.python] T-yhJ40vo3 - Processing thread joined ...
+[2020/06/07-15:12:23.919] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.prediction] T-yhJ40vo3 - Train done
+[2020/06/07-15:12:23.920] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.prediction] T-yhJ40vo3 - Train done
+[2020/06/07-15:12:23.939] [FT-TrainWorkThread-SQT8bxOp-1995] [INFO] [dku.analysis.prediction] T-yhJ40vo3 - Publishing mltask-train-done reflected event

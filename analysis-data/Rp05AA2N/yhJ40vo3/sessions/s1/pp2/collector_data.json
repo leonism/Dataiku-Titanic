@@ -1,0 +1,150 @@
+{
+    "per_feature": {
+        "Fare": {
+            "missing_impute_with_value": "0.0", 
+            "stats": {
+                "mostFrequentValue": "0.0", 
+                "leastFrequentValue": "3.0"
+            }, 
+            "category_possible_counts": [
+                280, 
+                104, 
+                78
+            ], 
+            "category_possible_values": [
+                "0.0", 
+                "2.0", 
+                "1.0"
+            ]
+        }, 
+        "Embarked": {
+            "missing_impute_with_value": "0", 
+            "stats": {
+                "mostFrequentValue": "0", 
+                "leastFrequentValue": "2"
+            }, 
+            "category_possible_counts": [
+                356, 
+                100
+            ], 
+            "category_possible_values": [
+                "0", 
+                "1"
+            ]
+        }, 
+        "Age": {
+            "missing_impute_with_value": "2.0", 
+            "stats": {
+                "mostFrequentValue": "2.0", 
+                "leastFrequentValue": "4.0"
+            }, 
+            "category_possible_counts": [
+                225, 
+                109, 
+                103
+            ], 
+            "category_possible_values": [
+                "2.0", 
+                "1.0", 
+                "3.0"
+            ]
+        }, 
+        "Title": {
+            "missing_impute_with_value": "0", 
+            "stats": {
+                "mostFrequentValue": "0", 
+                "leastFrequentValue": "3"
+            }, 
+            "category_possible_counts": [
+                288, 
+                100, 
+                70
+            ], 
+            "category_possible_values": [
+                "0", 
+                "1", 
+                "2"
+            ]
+        }, 
+        "Pclass": {
+            "missing_impute_with_value": "3", 
+            "stats": {
+                "mostFrequentValue": "3", 
+                "leastFrequentValue": "2"
+            }, 
+            "category_possible_counts": [
+                263, 
+                140
+            ], 
+            "category_possible_values": [
+                "3", 
+                "1"
+            ]
+        }, 
+        "Sex": {
+            "missing_impute_with_value": "0", 
+            "stats": {
+                "mostFrequentValue": "0", 
+                "leastFrequentValue": "1"
+            }, 
+            "category_possible_counts": [
+                323
+            ], 
+            "category_possible_values": [
+                "0"
+            ]
+        }, 
+        "FamilySize": {
+            "missing_impute_with_value": "0.0", 
+            "stats": {
+                "mostFrequentValue": "0.0", 
+                "leastFrequentValue": "2.8"
+            }, 
+            "category_possible_counts": [
+                302, 
+                97, 
+                50, 
+                15
+            ], 
+            "category_possible_values": [
+                "0.0", 
+                "0.4", 
+                "0.8", 
+                "1.2"
+            ]
+        }, 
+        "Survived": {
+            "stats": {}
+        }, 
+        "Cabin": {
+            "missing_impute_with_value": "1.2055", 
+            "stats": {
+                "mostFrequentValue": "1.2055", 
+                "leastFrequentValue": "0.494"
+            }, 
+            "category_possible_counts": [
+                370, 
+                44, 
+                27, 
+                22
+            ], 
+            "category_possible_values": [
+                "1.2055", 
+                "0.8", 
+                "0.4", 
+                "1.6"
+            ]
+        }
+    }, 
+    "feature_order": [
+        "Fare", 
+        "Embarked", 
+        "Age", 
+        "Title", 
+        "Pclass", 
+        "Sex", 
+        "FamilySize", 
+        "Survived", 
+        "Cabin"
+    ]
+}

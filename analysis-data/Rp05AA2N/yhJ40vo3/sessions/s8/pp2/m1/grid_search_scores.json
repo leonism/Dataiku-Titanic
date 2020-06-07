@@ -1,0 +1,57 @@
+{
+    "gridSize": 4, 
+    "nThreads": 4, 
+    "metric": "ROC_AUC", 
+    "gridPoints": [
+        {
+            "index": 0, 
+            "finishedAt": 1591522699182.0, 
+            "score": 0.8367393695014663, 
+            "parameters": {
+                "splitter": "random", 
+                "criterion": "gini", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "time": 90.0
+        }, 
+        {
+            "index": 1, 
+            "finishedAt": 1591522699068.0, 
+            "score": 0.8360096074067, 
+            "parameters": {
+                "splitter": "best", 
+                "criterion": "gini", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "time": 160.0
+        }, 
+        {
+            "index": 2, 
+            "finishedAt": 1591522699108.0, 
+            "score": 0.8288036540173035, 
+            "parameters": {
+                "splitter": "random", 
+                "criterion": "entropy", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "time": 82.0
+        }, 
+        {
+            "index": 3, 
+            "finishedAt": 1591522699161.0, 
+            "score": 0.8287608517220173, 
+            "parameters": {
+                "splitter": "best", 
+                "criterion": "entropy", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "time": 128.0
+        }
+    ], 
+    "startedAt": 1591522698982, 
+    "nSplits": 3
+}

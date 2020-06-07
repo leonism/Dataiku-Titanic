@@ -1,0 +1,26 @@
+{
+    "details": {
+        "FamilySize": {
+            "levels": [
+                "0.0", 
+                "0.4", 
+                "0.8", 
+                "1.2"
+            ], 
+            "with_others": true
+        }, 
+        "Pclass": {
+            "levels": [
+                "3", 
+                "1"
+            ], 
+            "with_others": true
+        }, 
+        "Sex": {
+            "levels": [
+                "0"
+            ], 
+            "with_others": true
+        }
+    }
+}

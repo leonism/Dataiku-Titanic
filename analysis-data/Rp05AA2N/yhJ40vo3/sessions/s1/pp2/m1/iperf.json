@@ -1,0 +1,347 @@
+{
+    "rawImportance": {
+        "variables": [
+            "dummy:Fare:1.0", 
+            "dummy:Fare:__Others__", 
+            "dummy:Embarked:0", 
+            "dummy:Embarked:1", 
+            "dummy:Age:1.0", 
+            "dummy:Age:__Others__", 
+            "dummy:Title:0", 
+            "dummy:Title:1", 
+            "dummy:Pclass:3", 
+            "dummy:Pclass:1", 
+            "dummy:Sex:__Others__", 
+            "dummy:FamilySize:0.0", 
+            "dummy:FamilySize:__Others__", 
+            "dummy:Cabin:0.4", 
+            "dummy:Cabin:1.6"
+        ], 
+        "importances": [
+            0.016187354883672452, 
+            0.01583431371599508, 
+            0.01882925359672964, 
+            0.011974398565326302, 
+            0.04617116503190264, 
+            0.01773058428495959, 
+            0.56282683753532, 
+            0.002418803947054746, 
+            0.04111291377908916, 
+            0.054863345763050714, 
+            0.04222129258893968, 
+            0.02838157873025382, 
+            0.11224341899419504, 
+            0.016220599925584604, 
+            0.012984138657926476
+        ]
+    }, 
+    "probaAware": true, 
+    "modelInputNRows": 496, 
+    "partialDependencies": [
+        {
+            "isDate": false, 
+            "computedPostTraining": true, 
+            "feature": "Embarked", 
+            "unrepresentedModalities": [
+                "2"
+            ], 
+            "randomState": 1337, 
+            "categories": [
+                "0", 
+                "1", 
+                "2", 
+                "__DKU_UNREPRESENTED__"
+            ], 
+            "nbRecords": 130, 
+            "onSample": false, 
+            "distribution": [
+                0.7384615384615385, 
+                0.16923076923076924, 
+                0.09230769230769231, 
+                0.0
+            ], 
+            "data": [
+                [
+                    -0.12775479181497876, 
+                    0.5549108483237951, 
+                    -0.003917368710651887, 
+                    -0.003917368710651887
+                ]
+            ], 
+            "indicesToDrop": []
+        }, 
+        {
+            "isDate": false, 
+            "categories": [
+                "3", 
+                "2", 
+                "1", 
+                "__DKU_UNREPRESENTED__"
+            ], 
+            "computedPostTraining": true, 
+            "feature": "Pclass", 
+            "randomState": 1337, 
+            "indicesToDrop": [], 
+            "nbRecords": 130, 
+            "onSample": false, 
+            "distribution": [
+                0.5230769230769231, 
+                0.2692307692307692, 
+                0.2076923076923077, 
+                0.0
+            ], 
+            "data": [
+                [
+                    -0.7128110784024299, 
+                    0.3768457769095597, 
+                    1.1178658397147903, 
+                    0.3768457769095597
+                ]
+            ], 
+            "unrepresentedModalities": [
+                "2"
+            ]
+        }, 
+        {
+            "isDate": false, 
+            "indicesToDrop": [], 
+            "computedPostTraining": true, 
+            "feature": "Cabin", 
+            "randomState": 1337, 
+            "unrepresentedModalities": [
+                "1.2", 
+                "2.0", 
+                "0.2", 
+                "2.4"
+            ], 
+            "nbRecords": 130, 
+            "onSample": false, 
+            "distribution": [
+                0.7923076923076923, 
+                0.06923076923076923, 
+                0.038461538461538464, 
+                0.038461538461538464, 
+                0.03076923076923077, 
+                0.015384615384615385, 
+                0.007692307692307693, 
+                0.007692307692307693, 
+                0.0
+            ], 
+            "data": [
+                [
+                    -0.07069415154053217, 
+                    -0.07069415154053217, 
+                    0.07069415154053216, 
+                    3.0986650743655524, 
+                    -0.07069415154053217, 
+                    -0.07069415154053217, 
+                    -0.07069415154053217, 
+                    -0.07069415154053217, 
+                    -0.07069415154053217
+                ]
+            ], 
+            "categories": [
+                "1.2055", 
+                "0.8", 
+                "0.4", 
+                "1.6", 
+                "1.2", 
+                "2.0", 
+                "0.2", 
+                "2.4", 
+                "__DKU_UNREPRESENTED__"
+            ]
+        }, 
+        {
+            "isDate": false, 
+            "computedPostTraining": true, 
+            "feature": "Sex", 
+            "unrepresentedModalities": [
+                "1"
+            ], 
+            "randomState": 1337, 
+            "categories": [
+                "0", 
+                "1", 
+                "__DKU_UNREPRESENTED__"
+            ], 
+            "nbRecords": 130, 
+            "onSample": false, 
+            "distribution": [
+                0.6538461538461539, 
+                0.34615384615384615, 
+                0.0
+            ], 
+            "data": [
+                [
+                    -0.3442657228963118, 
+                    0.022159408959848675, 
+                    0.022159408959848675
+                ]
+            ], 
+            "indicesToDrop": []
+        }, 
+        {
+            "isDate": false, 
+            "categories": [
+                "0.0", 
+                "0.4", 
+                "0.8", 
+                "1.2", 
+                "1.6", 
+                "2.4", 
+                "2.0", 
+                "4.0", 
+                "__DKU_UNREPRESENTED__"
+            ], 
+            "computedPostTraining": true, 
+            "feature": "FamilySize", 
+            "randomState": 1337, 
+            "indicesToDrop": [], 
+            "nbRecords": 130, 
+            "onSample": false, 
+            "distribution": [
+                0.5923076923076923, 
+                0.18461538461538463, 
+                0.13076923076923078, 
+                0.038461538461538464, 
+                0.023076923076923078, 
+                0.015384615384615385, 
+                0.007692307692307693, 
+                0.007692307692307693, 
+                0.0
+            ], 
+            "data": [
+                [
+                    0.13345877991989336, 
+                    0.2095165537507626, 
+                    0.2095165537507626, 
+                    0.2095165537507626, 
+                    -1.6511619159576736, 
+                    -1.6511619159576736, 
+                    -1.6511619159576736, 
+                    -1.6511619159576736, 
+                    -1.6511619159576736
+                ]
+            ], 
+            "unrepresentedModalities": [
+                "1.6", 
+                "2.4", 
+                "2.0", 
+                "4.0"
+            ]
+        }, 
+        {
+            "isDate": false, 
+            "indicesToDrop": [], 
+            "computedPostTraining": true, 
+            "feature": "Title", 
+            "randomState": 1337, 
+            "unrepresentedModalities": [
+                "3"
+            ], 
+            "nbRecords": 130, 
+            "onSample": false, 
+            "distribution": [
+                0.6153846153846154, 
+                0.16923076923076924, 
+                0.16153846153846155, 
+                0.05384615384615385, 
+                0.0
+            ], 
+            "data": [
+                [
+                    -1.3025666386005055, 
+                    2.4940212546775244, 
+                    2.4384942884760954, 
+                    2.4384942884760954, 
+                    2.4384942884760954
+                ]
+            ], 
+            "categories": [
+                "0", 
+                "1", 
+                "2", 
+                "3", 
+                "__DKU_UNREPRESENTED__"
+            ]
+        }, 
+        {
+            "isDate": false, 
+            "computedPostTraining": true, 
+            "feature": "Age", 
+            "unrepresentedModalities": [
+                "0.0", 
+                "4.0"
+            ], 
+            "randomState": 1337, 
+            "categories": [
+                "2.0", 
+                "1.0", 
+                "3.0", 
+                "0.0", 
+                "4.0", 
+                "__DKU_UNREPRESENTED__"
+            ], 
+            "nbRecords": 130, 
+            "onSample": false, 
+            "distribution": [
+                0.3923076923076923, 
+                0.2692307692307692, 
+                0.2692307692307692, 
+                0.046153846153846156, 
+                0.023076923076923078, 
+                0.0
+            ], 
+            "data": [
+                [
+                    -0.08755657168340245, 
+                    0.40210654733110934, 
+                    -0.08755657168340245, 
+                    0.19073044395775757, 
+                    0.19073044395775757, 
+                    0.19073044395775757
+                ]
+            ], 
+            "indicesToDrop": []
+        }, 
+        {
+            "computedPostTraining": true, 
+            "randomState": 1337, 
+            "onSample": false, 
+            "data": [
+                [
+                    0.014878416710045365, 
+                    -0.2610328119639649, 
+                    0.014878416710045365, 
+                    -0.30267244826932377, 
+                    -0.30267244826932377
+                ]
+            ], 
+            "indicesToDrop": [], 
+            "isDate": false, 
+            "feature": "Fare", 
+            "categories": [
+                "0.0", 
+                "1.0", 
+                "2.0", 
+                "3.0", 
+                "__DKU_UNREPRESENTED__"
+            ], 
+            "nbRecords": 130, 
+            "distribution": [
+                0.6153846153846154, 
+                0.18461538461538463, 
+                0.16153846153846155, 
+                0.038461538461538464, 
+                0.0
+            ], 
+            "unrepresentedModalities": [
+                "3.0"
+            ]
+        }
+    ], 
+    "modelInputNCols": 38, 
+    "modelInputMemory": 150784, 
+    "modelInputIsSparse": false
+}

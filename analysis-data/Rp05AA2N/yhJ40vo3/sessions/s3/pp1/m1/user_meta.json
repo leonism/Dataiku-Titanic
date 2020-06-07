@@ -1,0 +1,11 @@
+{
+  "description": "",
+  "name": "Logistic Regression",
+  "starred": true,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.625
+}

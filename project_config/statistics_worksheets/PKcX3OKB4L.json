@@ -1,0 +1,119 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "test_prepared_scored",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "Pclass",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Title",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Sex",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Age",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "FamilySize",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Fare",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Cabin",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Embarked",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "Xaqe5nZ"
+      },
+      {
+        "type": "fit_curve",
+        "curves": [
+          {
+            "type": "polynomial",
+            "degree": 2
+          }
+        ],
+        "xColumn": {
+          "name": "FamilySize",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "id": "Heit6eq"
+      }
+    ],
+    "id": "1bemyRg"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591519041576
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591518932099
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

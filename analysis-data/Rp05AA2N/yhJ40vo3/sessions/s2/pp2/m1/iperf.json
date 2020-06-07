@@ -1,0 +1,43 @@
+{
+    "rawImportance": {
+        "variables": [
+            "dummy:Fare:1.0", 
+            "dummy:Fare:__Others__", 
+            "dummy:Embarked:0", 
+            "dummy:Embarked:1", 
+            "dummy:Age:1.0", 
+            "dummy:Age:__Others__", 
+            "dummy:Title:0", 
+            "dummy:Title:1", 
+            "dummy:Pclass:3", 
+            "dummy:Pclass:1", 
+            "dummy:Sex:__Others__", 
+            "dummy:FamilySize:0.0", 
+            "dummy:FamilySize:__Others__", 
+            "dummy:Cabin:0.4", 
+            "dummy:Cabin:1.6"
+        ], 
+        "importances": [
+            0.016187354883672452, 
+            0.01583431371599508, 
+            0.01882925359672964, 
+            0.011974398565326302, 
+            0.04617116503190264, 
+            0.01773058428495959, 
+            0.56282683753532, 
+            0.002418803947054746, 
+            0.04111291377908916, 
+            0.054863345763050714, 
+            0.04222129258893968, 
+            0.02838157873025382, 
+            0.11224341899419504, 
+            0.016220599925584604, 
+            0.012984138657926476
+        ]
+    }, 
+    "probaAware": true, 
+    "modelInputNRows": 496, 
+    "modelInputNCols": 38, 
+    "modelInputMemory": 150784, 
+    "modelInputIsSparse": false
+}

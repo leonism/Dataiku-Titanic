@@ -1,0 +1,35 @@
+{
+    "algorithm_name": "DECISION_TREE", 
+    "classes": [
+        "0", 
+        "1"
+    ], 
+    "columns": [
+        "dummy:Pclass:3", 
+        "dummy:Pclass:1", 
+        "dummy:Pclass:N/A", 
+        "dummy:Pclass:__Others__", 
+        "dummy:Sex:0", 
+        "dummy:Sex:N/A", 
+        "dummy:Sex:__Others__", 
+        "dummy:FamilySize:0.0", 
+        "dummy:FamilySize:0.4", 
+        "dummy:FamilySize:0.8", 
+        "dummy:FamilySize:1.2", 
+        "dummy:FamilySize:N/A", 
+        "dummy:FamilySize:__Others__", 
+        "interaction:Pclass:Sex:3:0", 
+        "interaction:Pclass:Sex:3:1", 
+        "interaction:Pclass:Sex:1:1", 
+        "interaction:Pclass:Sex:2:0", 
+        "interaction:Pclass:Sex:2:1", 
+        "interaction:Pclass:FamilySize:3:0.0", 
+        "interaction:Pclass:FamilySize:1:0.0", 
+        "interaction:Pclass:FamilySize:1:0.4", 
+        "interaction:Pclass:FamilySize:1:0.8", 
+        "interaction:Pclass:FamilySize:2:0.8", 
+        "interaction:Pclass:FamilySize:3:2.0", 
+        "interaction:Pclass:FamilySize:2:1.2"
+    ], 
+    "backend": "PY_MEMORY"
+}

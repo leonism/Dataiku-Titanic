@@ -1,0 +1,1364 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "mainColor": "#90d931",
+      "name": "Cleaning Name",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "designTimeReport": {
+            "report": {
+              "createdColumnCount": 2
+            }
+          },
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnSplitter",
+          "params": {
+            "inCol": "Name",
+            "keepEmptyChunks": false,
+            "limit": 0,
+            "separator": ", ",
+            "outColPrefix": "Name_",
+            "limitOutput": false,
+            "target": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "designTimeReport": {
+            "report": {
+              "createdColumnCount": 3
+            }
+          },
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnSplitter",
+          "params": {
+            "inCol": "Name_1",
+            "keepEmptyChunks": false,
+            "limit": 0,
+            "separator": ".",
+            "outColPrefix": "Name_1_",
+            "limitOutput": false,
+            "target": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "Name_1",
+              "Name_1_1",
+              "Name_1_2",
+              "Name_0"
+            ],
+            "keep": false,
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "Mr",
+                "to": "0"
+              },
+              {
+                "from": "Miss",
+                "to": "1"
+              },
+              {
+                "from": "Mrs",
+                "to": "2"
+              },
+              {
+                "from": "Master",
+                "to": "3"
+              },
+              {
+                "from": "Dr",
+                "to": "3"
+              },
+              {
+                "from": "Rev",
+                "to": "3"
+              },
+              {
+                "from": "Col",
+                "to": "3"
+              },
+              {
+                "from": "Major",
+                "to": "3"
+              },
+              {
+                "from": "Mlle",
+                "to": "3"
+              },
+              {
+                "from": "Countess",
+                "to": "3"
+              },
+              {
+                "from": "Ms",
+                "to": "3"
+              },
+              {
+                "from": "Lady",
+                "to": "3"
+              },
+              {
+                "from": "Jonkheer",
+                "to": "3"
+              },
+              {
+                "from": "Don",
+                "to": "3"
+              },
+              {
+                "from": "Dona",
+                "to": "3"
+              },
+              {
+                "from": "Mme",
+                "to": "3"
+              },
+              {
+                "from": "Capt",
+                "to": "3"
+              },
+              {
+                "from": "Sir",
+                "to": "3"
+              },
+              {
+                "from": "Planke",
+                "to": "3"
+              },
+              {
+                "from": "the Countess",
+                "to": "3"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Name_1_0"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "FULL_STRING"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "Name_1_0",
+                "to": "Title"
+              }
+            ]
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "Name"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#deeccb"
+    },
+    {
+      "preview": false,
+      "mainColor": "#61c1b0",
+      "name": "Cleaning Gender",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "male",
+                "to": "0"
+              },
+              {
+                "from": "female",
+                "to": "1"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Sex"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "FULL_STRING"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#d4e7e4"
+    },
+    {
+      "preview": false,
+      "mainColor": "#ff9c00",
+      "name": "Cleaning Age",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FillEmptyWithValue",
+          "params": {
+            "columns": [
+              "Age"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "value": "28"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "BinnerProcessor",
+          "params": {
+            "output": "",
+            "mode": "CUSTOM",
+            "input": "Age",
+            "useMin": false,
+            "bins": [
+              {
+                "inf": 0.0,
+                "name": "0",
+                "sup": 16.0
+              },
+              {
+                "inf": 16.0,
+                "name": "1",
+                "sup": 26.0
+              },
+              {
+                "inf": 26.0,
+                "name": "2",
+                "sup": 36.0
+              },
+              {
+                "inf": 36.0,
+                "name": "3",
+                "sup": 62.0
+              },
+              {
+                "inf": 62.0,
+                "name": "4",
+                "sup": 100.0
+              }
+            ],
+            "min": 0.0,
+            "max": 0.0,
+            "useMax": false,
+            "width": 1.0
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#f4e0c1"
+    },
+    {
+      "preview": false,
+      "mainColor": "#ffdc00",
+      "name": "FamilySize",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "SibSp + Parch +1",
+            "column": "FamilySize"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnCopier",
+          "params": {
+            "outputColumn": "FamilySize_copy",
+            "inputColumn": "FamilySize"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "1",
+                "to": "0"
+              },
+              {
+                "from": "2",
+                "to": "0.4"
+              },
+              {
+                "from": "3",
+                "to": "0.8"
+              },
+              {
+                "from": "4",
+                "to": "1.2"
+              },
+              {
+                "from": "5",
+                "to": "1.6"
+              },
+              {
+                "from": "6",
+                "to": "2"
+              },
+              {
+                "from": "7",
+                "to": "2.4"
+              },
+              {
+                "from": "8",
+                "to": "2.8"
+              },
+              {
+                "from": "9",
+                "to": "3.2"
+              },
+              {
+                "from": "10",
+                "to": "3.6"
+              },
+              {
+                "from": "11",
+                "to": "4"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "FamilySize_copy"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "FULL_STRING"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "FamilySize"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "FamilySize_copy",
+                "to": "FamilySize"
+              }
+            ]
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#f4edc1"
+    },
+    {
+      "preview": false,
+      "mainColor": "#30c2ff",
+      "name": "Cleaning Embark",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FillEmptyWithValue",
+          "params": {
+            "columns": [
+              "Embarked"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "value": "S"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "S",
+                "to": "0"
+              },
+              {
+                "from": "C",
+                "to": "1"
+              },
+              {
+                "from": "Q",
+                "to": "2"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Embarked"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "SUBSTRING"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#cae8f4"
+    },
+    {
+      "preview": false,
+      "mainColor": "#61c1b0",
+      "name": "Cleaning Fare",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FilterOnValue",
+          "params": {
+            "normalizationMode": "EXACT",
+            "booleanMode": "AND",
+            "columns": [
+              "Fare"
+            ],
+            "values": [
+              "0.0"
+            ],
+            "matchingMode": "FULL_STRING",
+            "action": "CLEAR_CELL",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FillEmptyWithValue",
+          "params": {
+            "columns": [
+              "Fare"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "value": "14.5"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "BinnerProcessor",
+          "params": {
+            "output": "",
+            "mode": "CUSTOM",
+            "input": "Fare",
+            "useMin": false,
+            "bins": [
+              {
+                "inf": 0.0,
+                "name": "0",
+                "sup": 21.0
+              },
+              {
+                "inf": 21.0,
+                "name": "1",
+                "sup": 31.0
+              },
+              {
+                "inf": 31.0,
+                "name": "2",
+                "sup": 101.0
+              },
+              {
+                "inf": 101.0,
+                "name": "3",
+                "sup": 1000.0
+              }
+            ],
+            "min": 0.0,
+            "max": 0.0,
+            "useMax": false,
+            "width": 1.0
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#d4e7e4"
+    },
+    {
+      "preview": false,
+      "mainColor": "#90d931",
+      "name": "Cleaning Cabin",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "mainColor": "#30c2ff",
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "A",
+                "to": "0"
+              },
+              {
+                "from": "B",
+                "to": "0.4"
+              },
+              {
+                "from": "C",
+                "to": "0.8"
+              },
+              {
+                "from": "D",
+                "to": "1.2"
+              },
+              {
+                "from": "E",
+                "to": "1.6"
+              },
+              {
+                "from": "F",
+                "to": "2"
+              },
+              {
+                "from": "G",
+                "to": "2.4"
+              },
+              {
+                "from": "T",
+                "to": "2.8"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Cabin"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "PATTERN"
+          },
+          "alwaysShowComment": false,
+          "secondaryColor": "#cae8f4"
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FillEmptyWithValue",
+          "params": {
+            "columns": [
+              "Cabin"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "value": "1.2055"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "0.823 0.825 0.827",
+                "to": "0.8"
+              },
+              {
+                "from": "0.496 0.498",
+                "to": "0.4"
+              },
+              {
+                "from": "0.822 0.826",
+                "to": "0.8"
+              },
+              {
+                "from": "2 2.473",
+                "to": "2"
+              },
+              {
+                "from": "22",
+                "to": "2"
+              },
+              {
+                "from": "233",
+                "to": "2"
+              },
+              {
+                "from": "0.451 0.453 0.455",
+                "to": "0.4"
+              },
+              {
+                "from": "0.457 0.459 0.463 0.466",
+                "to": "0.4"
+              },
+              {
+                "from": "0.458 0.460",
+                "to": "0.4"
+              },
+              {
+                "from": "24",
+                "to": "2"
+              },
+              {
+                "from": "0.832",
+                "to": "0.8"
+              },
+              {
+                "from": "0.892",
+                "to": "0.8"
+              },
+              {
+                "from": "0.890",
+                "to": "0.8"
+              },
+              {
+                "from": "0.895",
+                "to": "0.8"
+              },
+              {
+                "from": "0.852",
+                "to": "0.8"
+              },
+              {
+                "from": "0.893",
+                "to": "0.8"
+              },
+              {
+                "from": "0.882",
+                "to": "0.8"
+              },
+              {
+                "from": "0.82",
+                "to": "0.8"
+              },
+              {
+                "from": "1.633",
+                "to": "1.6"
+              },
+              {
+                "from": "1.634",
+                "to": "1.6"
+              },
+              {
+                "from": "1.636",
+                "to": "1.6"
+              },
+              {
+                "from": "1.638",
+                "to": "1.6"
+              },
+              {
+                "from": "1.233",
+                "to": "1.6"
+              },
+              {
+                "from": "1.663",
+                "to": "1.6"
+              },
+              {
+                "from": "1.631",
+                "to": "1.6"
+              },
+              {
+                "from": "0.886",
+                "to": "0.8"
+              },
+              {
+                "from": "0.887",
+                "to": "0.8"
+              },
+              {
+                "from": "0.846",
+                "to": "0.8"
+              },
+              {
+                "from": "0.885",
+                "to": "0.8"
+              },
+              {
+                "from": "0.486",
+                "to": "0.8"
+              },
+              {
+                "from": "0.883",
+                "to": "0.8"
+              },
+              {
+                "from": "0.478",
+                "to": "0.4"
+              },
+              {
+                "from": "0.437",
+                "to": "0.4"
+              },
+              {
+                "from": "0.438",
+                "to": "0.4"
+              },
+              {
+                "from": "0.435",
+                "to": "0.4"
+              },
+              {
+                "from": "0.430",
+                "to": "0.4"
+              },
+              {
+                "from": "0.43",
+                "to": "0.4"
+              },
+              {
+                "from": "0.477",
+                "to": "0.4"
+              },
+              {
+                "from": "0.449",
+                "to": "0.4"
+              },
+              {
+                "from": "0.479",
+                "to": "0.4"
+              },
+              {
+                "from": "0.849",
+                "to": "0.4"
+              },
+              {
+                "from": "0.439",
+                "to": "0.4"
+              },
+              {
+                "from": "0.44",
+                "to": "0.4"
+              },
+              {
+                "from": "0.441",
+                "to": "0.4"
+              },
+              {
+                "from": "0.442",
+                "to": "0.4"
+              },
+              {
+                "from": "1.247",
+                "to": "1.2"
+              },
+              {
+                "from": "1.248",
+                "to": "1.2"
+              },
+              {
+                "from": "1.249",
+                "to": "1.2"
+              },
+              {
+                "from": "1.217",
+                "to": "1.2"
+              },
+              {
+                "from": "1.27",
+                "to": "1.2"
+              },
+              {
+                "from": "1.245",
+                "to": "1.2"
+              },
+              {
+                "from": "1.236",
+                "to": "1.2"
+              },
+              {
+                "from": "1.237",
+                "to": "1.2"
+              },
+              {
+                "from": "1.226",
+                "to": "1.2"
+              },
+              {
+                "from": "1.26",
+                "to": "1.2"
+              },
+              {
+                "from": "1.230",
+                "to": "1.2"
+              },
+              {
+                "from": "1.256",
+                "to": "1.2"
+              },
+              {
+                "from": "1.235",
+                "to": "1.2"
+              },
+              {
+                "from": "1.246",
+                "to": "1.2"
+              },
+              {
+                "from": "1.625",
+                "to": "1.6"
+              },
+              {
+                "from": "0.473",
+                "to": "0.4"
+              },
+              {
+                "from": "0.471",
+                "to": "0.4"
+              },
+              {
+                "from": "0.469",
+                "to": "0.4"
+              },
+              {
+                "from": "238",
+                "to": "2.8"
+              },
+              {
+                "from": "0.4102",
+                "to": "0.4"
+              },
+              {
+                "from": "0.4101",
+                "to": "0.4"
+              },
+              {
+                "from": "0.854",
+                "to": "0.8"
+              },
+              {
+                "from": "0.899",
+                "to": "0.8"
+              },
+              {
+                "from": "0.891",
+                "to": "0.8"
+              },
+              {
+                "from": "0.419",
+                "to": "0.4"
+              },
+              {
+                "from": "1.29",
+                "to": "1.2"
+              },
+              {
+                "from": "0.878",
+                "to": "0.8"
+              },
+              {
+                "from": "1.215",
+                "to": "1.2"
+              },
+              {
+                "from": "1.219",
+                "to": "1.2"
+              },
+              {
+                "from": "1.211",
+                "to": "1.2"
+              },
+              {
+                "from": "1.250",
+                "to": "1.2"
+              },
+              {
+                "from": "0.45",
+                "to": "0.8"
+              },
+              {
+                "from": "1.228",
+                "to": "1.2"
+              },
+              {
+                "from": "1.220",
+                "to": "1.2"
+              },
+              {
+                "from": "1.221",
+                "to": "1.2"
+              },
+              {
+                "from": "1.677",
+                "to": "1.6"
+              },
+              {
+                "from": "1.667",
+                "to": "1.6"
+              },
+              {
+                "from": "0.868",
+                "to": "0.8"
+              },
+              {
+                "from": "1.6121",
+                "to": "1.6"
+              },
+              {
+                "from": "0.845",
+                "to": "0.8"
+              },
+              {
+                "from": "0.865",
+                "to": "0.8"
+              },
+              {
+                "from": "0.847",
+                "to": "0.8"
+              },
+              {
+                "from": "0.480",
+                "to": "0.4"
+              },
+              {
+                "from": "0.450",
+                "to": "0.4"
+              },
+              {
+                "from": "0.870",
+                "to": "0.8"
+              },
+              {
+                "from": "0.87",
+                "to": "0.8"
+              },
+              {
+                "from": "0.830",
+                "to": "0.8"
+              },
+              {
+                "from": "0.850",
+                "to": "0.8"
+              },
+              {
+                "from": "0.428",
+                "to": "0.4"
+              },
+              {
+                "from": "0.418",
+                "to": "0.4"
+              },
+              {
+                "from": "0.422",
+                "to": "0.4"
+              },
+              {
+                "from": "0.420",
+                "to": "0.4"
+              },
+              {
+                "from": "1.668",
+                "to": "1.6"
+              },
+              {
+                "from": "1.658",
+                "to": "1.6"
+              },
+              {
+                "from": "1.68",
+                "to": "1.6"
+              },
+              {
+                "from": "0.8148",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8118",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8111",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8110",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8104",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8103",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8101",
+                "to": "0.8"
+              },
+              {
+                "from": "1.644",
+                "to": "1.6"
+              },
+              {
+                "from": "1.646",
+                "to": "1.6"
+              },
+              {
+                "from": "1.624",
+                "to": "1.6"
+              },
+              {
+                "from": "1.649",
+                "to": "1.6"
+              },
+              {
+                "from": "0.8126",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8125",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8124",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8123",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8106",
+                "to": "0.8"
+              },
+              {
+                "from": "0.8128",
+                "to": "0.8"
+              },
+              {
+                "from": "1.610",
+                "to": "1.6"
+              },
+              {
+                "from": "1.612",
+                "to": "1.6"
+              },
+              {
+                "from": "1.617",
+                "to": "1.6"
+              },
+              {
+                "from": "1.6101",
+                "to": "1.6"
+              },
+              {
+                "from": "1.650",
+                "to": "1.6"
+              },
+              {
+                "from": "1.640",
+                "to": "1.6"
+              },
+              {
+                "from": "023",
+                "to": "0.2"
+              },
+              {
+                "from": "024",
+                "to": "0.2"
+              },
+              {
+                "from": "026",
+                "to": "0.2"
+              },
+              {
+                "from": "020",
+                "to": "0.2"
+              },
+              {
+                "from": "034",
+                "to": "0.4"
+              },
+              {
+                "from": "036",
+                "to": "0.4"
+              },
+              {
+                "from": "031",
+                "to": "0.4"
+              },
+              {
+                "from": "032",
+                "to": "0.4"
+              },
+              {
+                "from": "1.210 1.212",
+                "to": "1.2"
+              },
+              {
+                "from": "2.46",
+                "to": "2.4"
+              },
+              {
+                "from": "0.482 0.484",
+                "to": "0.4"
+              },
+              {
+                "from": "0.862 0.864",
+                "to": "0.8"
+              },
+              {
+                "from": "2 2.463",
+                "to": "2"
+              },
+              {
+                "from": "2 1.669",
+                "to": "2"
+              },
+              {
+                "from": "05",
+                "to": "0.4"
+              },
+              {
+                "from": "06",
+                "to": "0.8"
+              },
+              {
+                "from": "07",
+                "to": "0.8"
+              },
+              {
+                "from": "010",
+                "to": "0.8"
+              },
+              {
+                "from": "014",
+                "to": "1.2"
+              },
+              {
+                "from": "016",
+                "to": "1.2"
+              },
+              {
+                "from": "019",
+                "to": "2"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Cabin"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "FULL_STRING"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#deeccb"
+    },
+    {
+      "preview": false,
+      "mainColor": "#ff9c00",
+      "name": "Columns Cleaning",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "Parch",
+              "SibSp",
+              "Ticket"
+            ],
+            "keep": false,
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#f4e0c1"
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Name_7": 100,
+    "Pclass": 100,
+    "Name_6": 100,
+    "Name_5": 100,
+    "Name_1_2": 100,
+    "Name_4": 100,
+    "Name_9": 100,
+    "Sex": 100,
+    "Name_8": 100,
+    "FamilySize": 100,
+    "Name": 300,
+    "Cabin2": 100,
+    "Cabin": 125,
+    "FamilySize2": 100,
+    "Name_1_1": 225,
+    "Name_1_0": 100,
+    "Age": 100,
+    "Name_found": 100,
+    "Embarked": 100,
+    "Cabin_3": 100,
+    "Survived": 100,
+    "Ticket": 100,
+    "Cabin_2": 100,
+    "PassengerId": 100,
+    "Cabin_1": 100,
+    "Cabin_0": 100,
+    "Name_10": 100,
+    "FamilySize_copy": 128,
+    "Cabin_0_1": 100,
+    "Title": 100,
+    "SibSp": 100,
+    "Age2": 100,
+    "Fare2": 100,
+    "Name_13": 100,
+    "Name_12": 100,
+    "Fare": 100,
+    "Name_11": 100,
+    "Cabin_0_0": 100,
+    "Parch": 100,
+    "Name_3": 100,
+    "Name_2": 100,
+    "Name_1": 239,
+    "Ca": 100,
+    "Name_0": 113
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

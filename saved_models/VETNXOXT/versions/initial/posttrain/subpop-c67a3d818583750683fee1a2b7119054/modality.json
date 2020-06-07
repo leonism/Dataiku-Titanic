@@ -1,0 +1,45 @@
+{
+    "isDate": false, 
+    "weightedNbRecords": 130, 
+    "modalities": [
+        {
+            "count": 51, 
+            "index": 0, 
+            "weightedCount": 51, 
+            "value": "2.0", 
+            "filePath": "modality_perf_0.json"
+        }, 
+        {
+            "count": 35, 
+            "index": 1, 
+            "weightedCount": 35, 
+            "value": "3.0", 
+            "filePath": "modality_perf_1.json"
+        }, 
+        {
+            "count": 35, 
+            "index": 2, 
+            "weightedCount": 35, 
+            "value": "1.0", 
+            "filePath": "modality_perf_2.json"
+        }, 
+        {
+            "count": 6, 
+            "index": 3, 
+            "weightedCount": 6, 
+            "value": "0.0", 
+            "filePath": "modality_perf_3.json"
+        }, 
+        {
+            "count": 3, 
+            "index": 4, 
+            "weightedCount": 3, 
+            "value": "4.0", 
+            "filePath": "modality_perf_4.json"
+        }
+    ], 
+    "feature": "Age", 
+    "computed_as_type": "CATEGORY", 
+    "sameNumRowsAsSplit": true, 
+    "nbRecords": 130
+}

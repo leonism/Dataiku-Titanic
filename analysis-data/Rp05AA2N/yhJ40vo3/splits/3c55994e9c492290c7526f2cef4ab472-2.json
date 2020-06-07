@@ -1,0 +1,55 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 2,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1591522688281,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dtrain_prepared,sel\u003d(method\u003dfull),r\u003d0.8,s\u003d1337",
+  "instanceId": "3c55994e9c492290c7526f2cef4ab472-2",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Survived","type":"bigint"},
+      {"name":"Pclass","type":"bigint"},
+      {"name":"Title","type":"bigint"},
+      {"name":"Sex","type":"bigint"},
+      {"name":"Age","type":"double"},
+      {"name":"FamilySize","type":"double"},
+      {"name":"Fare","type":"double"},
+      {"name":"Cabin","type":"double"},
+      {"name":"Embarked","type":"bigint"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train-3c55994e9c492290c7526f2cef4ab472-2.csv.gz",
+  "testPath": "test-3c55994e9c492290c7526f2cef4ab472-2.csv.gz",
+  "trainRows": 496,
+  "testRows": 130,
+  "fullRows": 0
+}

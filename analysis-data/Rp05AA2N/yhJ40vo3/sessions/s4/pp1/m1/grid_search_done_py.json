@@ -1,0 +1,242 @@
+[
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 0.01
+        }, 
+        "score_time": 42, 
+        "test_score": 0.5, 
+        "fit_time": 11, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.5, 
+        "parameter_id": 0, 
+        "time": 53, 
+        "done_at": 1591517668458, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 0.01}@2"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 100.0
+        }, 
+        "score_time": 22, 
+        "test_score": 0.8563998190863862, 
+        "fit_time": 7, 
+        "num_samples": 166, 
+        "best_iteration": null, 
+        "train_score": 0.8502257422711968, 
+        "parameter_id": 4, 
+        "time": 29, 
+        "done_at": 1591517668550, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 100.0}@0"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 1.0
+        }, 
+        "score_time": 8, 
+        "test_score": 0.7914753596571779, 
+        "fit_time": 14, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8823574086731982, 
+        "parameter_id": 2, 
+        "time": 22, 
+        "done_at": 1591517668362, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 1.0}@1"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 0.1
+        }, 
+        "score_time": 34, 
+        "test_score": 0.8791647821498567, 
+        "fit_time": 6, 
+        "num_samples": 166, 
+        "best_iteration": null, 
+        "train_score": 0.7966215182124272, 
+        "parameter_id": 1, 
+        "time": 40, 
+        "done_at": 1591517668462, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 0.1}@0"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 100.0
+        }, 
+        "score_time": 14, 
+        "test_score": 0.8081573308846036, 
+        "fit_time": 16, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8859269385585175, 
+        "parameter_id": 4, 
+        "time": 30, 
+        "done_at": 1591517668568, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 100.0}@1"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 1.0
+        }, 
+        "score_time": 11, 
+        "test_score": 0.8847429519071309, 
+        "fit_time": 31, 
+        "num_samples": 166, 
+        "best_iteration": null, 
+        "train_score": 0.8411195286195288, 
+        "parameter_id": 2, 
+        "time": 42, 
+        "done_at": 1591517668365, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 1.0}@0"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 0.1
+        }, 
+        "score_time": 36, 
+        "test_score": 0.7474747474747475, 
+        "fit_time": 17, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8439280018227386, 
+        "parameter_id": 1, 
+        "time": 53, 
+        "done_at": 1591517668486, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 0.1}@1"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 10.0
+        }, 
+        "score_time": 27, 
+        "test_score": 0.8546831955922864, 
+        "fit_time": 8, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8586618060302269, 
+        "parameter_id": 3, 
+        "time": 35, 
+        "done_at": 1591517668537, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 10.0}@2"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 0.01
+        }, 
+        "score_time": 7, 
+        "test_score": 0.5, 
+        "fit_time": 2, 
+        "num_samples": 166, 
+        "best_iteration": null, 
+        "train_score": 0.5, 
+        "parameter_id": 0, 
+        "time": 9, 
+        "done_at": 1591517668404, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 0.01}@0"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 100.0
+        }, 
+        "score_time": 5, 
+        "test_score": 0.8542240587695134, 
+        "fit_time": 10, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8592314118629907, 
+        "parameter_id": 4, 
+        "time": 15, 
+        "done_at": 1591517668567, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 100.0}@2"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 10.0
+        }, 
+        "score_time": 44, 
+        "test_score": 0.806626874808693, 
+        "fit_time": 6, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8860408597250702, 
+        "parameter_id": 3, 
+        "time": 50, 
+        "done_at": 1591517668531, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 10.0}@1"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 0.1
+        }, 
+        "score_time": 38, 
+        "test_score": 0.8235384144475053, 
+        "fit_time": 9, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8252829042302727, 
+        "parameter_id": 1, 
+        "time": 47, 
+        "done_at": 1591517668497, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 0.1}@2"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 1.0
+        }, 
+        "score_time": 7, 
+        "test_score": 0.8424395469850013, 
+        "fit_time": 14, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.8540290119237487, 
+        "parameter_id": 2, 
+        "time": 21, 
+        "done_at": 1591517668394, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 1.0}@2"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 0.01
+        }, 
+        "score_time": 35, 
+        "test_score": 0.5, 
+        "fit_time": 2, 
+        "num_samples": 165, 
+        "best_iteration": null, 
+        "train_score": 0.5, 
+        "parameter_id": 0, 
+        "time": 37, 
+        "done_at": 1591517668433, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 0.01}@1"
+    }, 
+    {
+        "parameters": {
+            "penalty": "l1", 
+            "C": 10.0
+        }, 
+        "score_time": 49, 
+        "test_score": 0.8663500678426052, 
+        "fit_time": 11, 
+        "num_samples": 166, 
+        "best_iteration": null, 
+        "train_score": 0.8488865932047749, 
+        "parameter_id": 3, 
+        "time": 60, 
+        "done_at": 1591517668540, 
+        "grid_point_id": "{\"penalty\": \"l1\", \"C\": 10.0}@0"
+    }
+]

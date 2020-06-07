@@ -1,0 +1,13 @@
+{
+    "onSample": false, 
+    "sampleSize": 10000, 
+    "computedOn": "test set", 
+    "features": [
+        {
+            "folderPath": "subpop-8da8b33a3b6a367b885b54caf27703b7", 
+            "feature": "Sex", 
+            "done_at": 1591517289497
+        }
+    ], 
+    "randomState": 1337
+}

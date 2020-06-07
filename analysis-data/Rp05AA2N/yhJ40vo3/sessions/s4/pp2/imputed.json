@@ -1,0 +1,16 @@
+{
+    "num_values": [], 
+    "cat_values": [
+        "0.0", 
+        "2.0", 
+        "3", 
+        "0"
+    ], 
+    "cat_columns": [
+        "FamilySize", 
+        "Age", 
+        "Pclass", 
+        "Sex"
+    ], 
+    "num_columns": []
+}

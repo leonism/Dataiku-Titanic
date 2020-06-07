@@ -1,0 +1,13 @@
+{
+    "onSample": false, 
+    "sampleSize": 10000, 
+    "computedOn": "test set", 
+    "features": [
+        {
+            "folderPath": "subpop-c67a3d818583750683fee1a2b7119054", 
+            "feature": "Age", 
+            "done_at": 1591518282620
+        }
+    ], 
+    "randomState": 1337
+}

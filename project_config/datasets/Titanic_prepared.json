@@ -1,0 +1,305 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 17,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591517942235
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1591286749046
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/Titanic_prepared",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "PassengerId",
+        "type": "bigint"
+      },
+      {
+        "name": "Survived",
+        "type": "bigint"
+      },
+      {
+        "name": "Pclass",
+        "type": "bigint"
+      },
+      {
+        "name": "Title",
+        "type": "bigint"
+      },
+      {
+        "name": "Sex",
+        "type": "string"
+      },
+      {
+        "name": "Age",
+        "type": "double",
+        "meaning": "DoubleMeaning"
+      },
+      {
+        "name": "FamilySize",
+        "type": "double"
+      },
+      {
+        "name": "Fare",
+        "type": "double"
+      },
+      {
+        "name": "Cabin",
+        "type": "double",
+        "meaning": "DoubleMeaning"
+      },
+      {
+        "name": "Embarked",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "partition": "NP",
+      "columns": [
+        "PassengerId",
+        "Survived",
+        "Pclass",
+        "Title",
+        "Sex",
+        "Age",
+        "SibSp",
+        "Parch",
+        "Ticket",
+        "Fare",
+        "Cabin",
+        "Embarked"
+      ],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS",
+        "col_stats:MEAN:Age",
+        "reporting:BUILD_START_DATE",
+        "reporting:BUILD_DURATION",
+        "reporting:WARNING_COUNT",
+        "reporting:BUILD_SUCCESS",
+        "col_stats:COUNT:Age",
+        "col_stats:COUNT_DISTINCT:Age",
+        "col_stats:COUNT_NULL:Age",
+        "col_stats:HISTOGRAM:Age",
+        "col_stats:MAX:Age",
+        "reporting:METRICS_COMPUTATION_DURATION",
+        "col_stats:MIN:Age",
+        "adv_col_stats:MODE:Age",
+        "col_stats:STDDEV:Age",
+        "col_stats:SUM:Age",
+        "adv_col_stats:TOP10_WITH_COUNTS:Age",
+        "adv_col_stats:TOP10:Age",
+        "verify_col:FORCED_MEANING_EMPTY_COUNT:Age",
+        "percentile_stats:IQR:Age",
+        "verify_col:FORCED_MEANING_INVALID_COUNT:Age",
+        "verify_col:FORCED_MEANING_COUNT:Age",
+        "verify_col:FORCED_MEANING_VALID_COUNT:Age",
+        "verify_col:FORCED_MEANING_PERCENTAGE:Age",
+        "percentile_stats:P50:Age",
+        "percentile_stats:P25:Age",
+        "percentile_stats:P75:Age",
+        "percentile_stats:QUARTILES:Age"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "partition": "NP",
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

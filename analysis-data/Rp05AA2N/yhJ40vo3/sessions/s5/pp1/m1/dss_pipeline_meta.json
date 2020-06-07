@@ -1,0 +1,21 @@
+{
+    "algorithm_name": "LOGISTIC", 
+    "classes": [
+        "0", 
+        "1"
+    ], 
+    "columns": [
+        "dummy:Age:2.0", 
+        "dummy:Age:1.0", 
+        "dummy:Age:3.0", 
+        "dummy:Age:N/A", 
+        "dummy:Sex:0", 
+        "dummy:Sex:N/A", 
+        "dummy:FamilySize:0.0", 
+        "dummy:FamilySize:0.4", 
+        "dummy:FamilySize:0.8", 
+        "dummy:FamilySize:1.2", 
+        "dummy:FamilySize:N/A"
+    ], 
+    "backend": "PY_MEMORY"
+}

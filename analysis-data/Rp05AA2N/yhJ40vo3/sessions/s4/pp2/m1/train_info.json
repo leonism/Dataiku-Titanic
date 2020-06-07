@@ -1,0 +1,87 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 1,
+    "importantParams": [
+      {
+        "name": "max_depth",
+        "vals": [
+          "5"
+        ]
+      },
+      {
+        "name": "min_samples",
+        "vals": [
+          "1"
+        ]
+      },
+      {
+        "name": "criterion",
+        "vals": [
+          "gini"
+        ]
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "criterion",
+        "val": "gini"
+      },
+      {
+        "name": "max_depth",
+        "val": "5"
+      },
+      {
+        "name": "min_samples",
+        "val": "1"
+      }
+    ]
+  },
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 18
+      },
+      {
+        "name": "Loading test set",
+        "time": 10
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 16
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 105
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 51
+      },
+      {
+        "name": "Fitting model",
+        "time": 27
+      },
+      {
+        "name": "Saving model",
+        "time": 7
+      },
+      {
+        "name": "Scoring model",
+        "time": 578
+      }
+    ]
+  },
+  "startTime": 1591517668084,
+  "endTime": 1591517668901,
+  "preprocessingTime": 204,
+  "trainingTime": 613
+}

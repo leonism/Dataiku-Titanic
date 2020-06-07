@@ -1,0 +1,13 @@
+{
+    "resolved": {
+        "dt": {
+            "splitter": "random", 
+            "criterion": "gini", 
+            "max_depth": 5, 
+            "min_samples_leaf": 1
+        }, 
+        "skipExpensiveReports": false, 
+        "algorithm": "DECISION_TREE_CLASSIFICATION"
+    }, 
+    "other": {}
+}

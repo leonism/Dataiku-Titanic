@@ -1,0 +1,92 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 4, 
+    "rawImportance": {
+        "variables": [
+            "dummy:Age:2.0", 
+            "dummy:Age:1.0", 
+            "dummy:Age:3.0", 
+            "dummy:Age:__Others__", 
+            "dummy:Sex:__Others__", 
+            "dummy:FamilySize:0.4", 
+            "dummy:FamilySize:0.8", 
+            "dummy:FamilySize:1.2", 
+            "dummy:FamilySize:__Others__"
+        ], 
+        "importances": [
+            0.023214203349774705, 
+            0.06226031324171711, 
+            0.007251526595318569, 
+            0.04423009747589018, 
+            0.665634174634981, 
+            0.026752901668097934, 
+            0.08676516060706009, 
+            0.01849453629611599, 
+            0.06539708613104453
+        ]
+    }, 
+    "modelInputNRows": 496, 
+    "modelInputNCols": 14, 
+    "modelInputMemory": 55552, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.0030912061651652343, 
+            "scoreTime": 0.028333333333333332, 
+            "fitTime": 0.01933333333333333, 
+            "score": 0.7939451082806885, 
+            "params": {
+                "splitter": "random", 
+                "criterion": "entropy", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.002494438257849294, 
+            "scoreStd": 0.030010886478531857
+        }, 
+        {
+            "scoreTimeStd": 0.0024494897427831787, 
+            "scoreTime": 0.03, 
+            "fitTime": 0.013, 
+            "score": 0.7938687397567392, 
+            "params": {
+                "splitter": "best", 
+                "criterion": "entropy", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.006377042156569663, 
+            "scoreStd": 0.030051221570416536
+        }, 
+        {
+            "scoreTimeStd": 0.004320493798938573, 
+            "scoreTime": 0.027, 
+            "fitTime": 0.013333333333333334, 
+            "score": 0.8055054790806476, 
+            "params": {
+                "splitter": "random", 
+                "criterion": "gini", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.005436502143433364, 
+            "scoreStd": 0.019075369647027066
+        }, 
+        {
+            "scoreTimeStd": 0.002054804667656325, 
+            "scoreTime": 0.016333333333333335, 
+            "fitTime": 0.009333333333333334, 
+            "score": 0.8053527420327493, 
+            "params": {
+                "splitter": "best", 
+                "criterion": "gini", 
+                "max_depth": 5, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.0033993463423951896, 
+            "scoreStd": 0.019277930302662498
+        }
+    ], 
+    "gridBestScore": 0.8055054790806476, 
+    "modelInputIsSparse": false
+}

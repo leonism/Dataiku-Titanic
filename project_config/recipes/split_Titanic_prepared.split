@@ -1,0 +1,150 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": 1,
+  "seed": 1337,
+  "randomColumns": [
+    "PassengerId"
+  ],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 70
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 70
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "RANDOM_COLUMNS",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "PassengerId",
+                "type": "bigint"
+              },
+              {
+                "name": "Survived",
+                "type": "bigint"
+              },
+              {
+                "name": "Pclass",
+                "type": "bigint"
+              },
+              {
+                "name": "Title",
+                "type": "bigint"
+              },
+              {
+                "name": "Sex",
+                "type": "string"
+              },
+              {
+                "meaning": "DoubleMeaning",
+                "name": "Age",
+                "type": "double"
+              },
+              {
+                "name": "FamilySize",
+                "type": "double"
+              },
+              {
+                "name": "Fare",
+                "type": "double"
+              },
+              {
+                "meaning": "DoubleMeaning",
+                "name": "Cabin",
+                "type": "double"
+              },
+              {
+                "name": "Embarked",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ]
+}

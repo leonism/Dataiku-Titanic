@@ -1,0 +1,82 @@
+{
+    "per_feature": {
+        "Fare": {
+            "stats": {}
+        }, 
+        "Embarked": {
+            "stats": {}
+        }, 
+        "Age": {
+            "missing_impute_with_value": "2.0", 
+            "stats": {
+                "mostFrequentValue": "2.0", 
+                "leastFrequentValue": "4.0"
+            }, 
+            "category_possible_counts": [
+                225, 
+                109, 
+                103
+            ], 
+            "category_possible_values": [
+                "2.0", 
+                "1.0", 
+                "3.0"
+            ]
+        }, 
+        "Title": {
+            "stats": {}
+        }, 
+        "Pclass": {
+            "stats": {}
+        }, 
+        "Sex": {
+            "missing_impute_with_value": "0", 
+            "stats": {
+                "mostFrequentValue": "0", 
+                "leastFrequentValue": "1"
+            }, 
+            "category_possible_counts": [
+                323
+            ], 
+            "category_possible_values": [
+                "0"
+            ]
+        }, 
+        "FamilySize": {
+            "missing_impute_with_value": "0.0", 
+            "stats": {
+                "mostFrequentValue": "0.0", 
+                "leastFrequentValue": "2.8"
+            }, 
+            "category_possible_counts": [
+                302, 
+                97, 
+                50, 
+                15
+            ], 
+            "category_possible_values": [
+                "0.0", 
+                "0.4", 
+                "0.8", 
+                "1.2"
+            ]
+        }, 
+        "Survived": {
+            "stats": {}
+        }, 
+        "Cabin": {
+            "stats": {}
+        }
+    }, 
+    "feature_order": [
+        "Fare", 
+        "Embarked", 
+        "Age", 
+        "Title", 
+        "Pclass", 
+        "Sex", 
+        "FamilySize", 
+        "Survived", 
+        "Cabin"
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 5, 
+    "modelInputNRows": 496, 
+    "modelInputNCols": 25, 
+    "modelInputMemory": 99200, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.04000277768133386, 
+            "scoreTime": 0.042666666666666665, 
+            "fitTime": 0.045000000000000005, 
+            "score": 0.8440452156373558, 
+            "params": {
+                "penalty": "l1", 
+                "C": 100.0
+            }, 
+            "fitTimeStd": 0.024779023386727737, 
+            "scoreStd": 0.029520272766517395
+        }, 
+        {
+            "scoreTimeStd": 0.015895492023421817, 
+            "scoreTime": 0.022000000000000002, 
+            "fitTime": 0.018666666666666668, 
+            "score": 0.8179510408611879, 
+            "params": {
+                "penalty": "l1", 
+                "C": 0.1
+            }, 
+            "fitTimeStd": 0.009568466729604883, 
+            "scoreStd": 0.05367868755725079
+        }, 
+        {
+            "scoreTimeStd": 0.010801234497346435, 
+            "scoreTime": 0.019, 
+            "fitTime": 0.026000000000000006, 
+            "score": 0.8430049319628641, 
+            "params": {
+                "penalty": "l1", 
+                "C": 10.0
+            }, 
+            "fitTimeStd": 0.02760434748368452, 
+            "scoreStd": 0.027609464172360494
+        }, 
+        {
+            "scoreTimeStd": 0.008602325267042627, 
+            "scoreTime": 0.018000000000000002, 
+            "fitTime": 0.009, 
+            "score": 0.8421442093053793, 
+            "params": {
+                "penalty": "l1", 
+                "C": 1.0
+            }, 
+            "fitTimeStd": 0.005887840577551898, 
+            "scoreStd": 0.03400914544647411
+        }, 
+        {
+            "scoreTimeStd": 0.009533566430716728, 
+            "scoreTime": 0.028333333333333332, 
+            "fitTime": 0.0033333333333333335, 
+            "score": 0.5, 
+            "params": {
+                "penalty": "l1", 
+                "C": 0.01
+            }, 
+            "fitTimeStd": 0.0012472191289246471, 
+            "scoreStd": 0.0
+        }
+    ], 
+    "lmCoefficients": {
+        "interceptStderr": null, 
+        "interceptTstat": null, 
+        "rescaledInterceptCoef": -0.025437205203939606, 
+        "rescaledCoefs": [
+            -0.2036849628933188, 
+            -1.9024095431783736, 
+            1.7959991720676554, 
+            0.714517036499177, 
+            1.7125445338010459, 
+            1.5694614515106122, 
+            0.000681179161034054, 
+            -0.22719382314512024, 
+            2.845625760383418, 
+            -1.486057826026253, 
+            1.7588054536023305, 
+            -1.2039779204513612, 
+            -0.022840233755627545, 
+            1.6724389965336741, 
+            0.61895217760833, 
+            2.6136028991401714, 
+            -5.840357304629147, 
+            0.43468564109818386, 
+            0.9923606380727547, 
+            -5.385394427565208, 
+            -4.612942251830146
+        ], 
+        "variables": [
+            "dummy:Pclass:1", 
+            "dummy:Sex:0", 
+            "dummy:FamilySize:0.0", 
+            "dummy:FamilySize:0.4", 
+            "dummy:FamilySize:0.8", 
+            "dummy:FamilySize:1.2", 
+            "interaction:Pclass:Sex:3:0", 
+            "interaction:Pclass:Sex:3:1", 
+            "interaction:Pclass:Sex:1:1", 
+            "interaction:Pclass:Sex:2:0", 
+            "interaction:Pclass:Sex:2:1", 
+            "interaction:Pclass:FamilySize:3:0.0", 
+            "interaction:Pclass:FamilySize:1:0.0", 
+            "interaction:Pclass:FamilySize:1:0.4", 
+            "interaction:Pclass:FamilySize:1:0.8", 
+            "interaction:Pclass:FamilySize:2:0.8", 
+            "interaction:Pclass:FamilySize:3:2.0", 
+            "interaction:Pclass:FamilySize:2:1.2", 
+            "interaction:Pclass:FamilySize:3:1.2", 
+            "interaction:Pclass:FamilySize:3:1.6", 
+            "interaction:Pclass:FamilySize:3:4.0"
+        ], 
+        "interceptCoef": -0.025437205203939606, 
+        "interceptPvalue": null, 
+        "coefs": [
+            -0.2036849628933188, 
+            -1.9024095431783736, 
+            1.7959991720676554, 
+            0.714517036499177, 
+            1.7125445338010459, 
+            1.5694614515106122, 
+            0.000681179161034054, 
+            -0.22719382314512024, 
+            2.845625760383418, 
+            -1.486057826026253, 
+            1.7588054536023305, 
+            -1.2039779204513612, 
+            -0.022840233755627545, 
+            1.6724389965336741, 
+            0.61895217760833, 
+            2.6136028991401714, 
+            -5.840357304629147, 
+            0.43468564109818386, 
+            0.9923606380727547, 
+            -5.385394427565208, 
+            -4.612942251830146
+        ]
+    }, 
+    "gridBestScore": 0.8440452156373558, 
+    "modelInputIsSparse": false
+}

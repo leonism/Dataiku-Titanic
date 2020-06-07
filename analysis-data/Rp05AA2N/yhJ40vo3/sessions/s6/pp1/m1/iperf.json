@@ -1,0 +1,106 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 5, 
+    "modelInputNRows": 496, 
+    "modelInputNCols": 10, 
+    "modelInputMemory": 39680, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.004988876515698588, 
+            "scoreTime": 0.03833333333333333, 
+            "fitTime": 0.011333333333333334, 
+            "score": 0.5, 
+            "params": {
+                "penalty": "l1", 
+                "C": 0.01
+            }, 
+            "fitTimeStd": 0.003299831645537222, 
+            "scoreStd": 0.0
+        }, 
+        {
+            "scoreTimeStd": 0.0043204937989385715, 
+            "scoreTime": 0.039, 
+            "fitTime": 0.01, 
+            "score": 0.8409073431717269, 
+            "params": {
+                "penalty": "l1", 
+                "C": 10.0
+            }, 
+            "fitTimeStd": 0.0014142135623730955, 
+            "scoreStd": 0.02876036340882736
+        }, 
+        {
+            "scoreTimeStd": 0.002624669291337271, 
+            "scoreTime": 0.03266666666666667, 
+            "fitTime": 0.006666666666666665, 
+            "score": 0.8168518660363868, 
+            "params": {
+                "penalty": "l1", 
+                "C": 0.1
+            }, 
+            "fitTimeStd": 0.0016996731711975946, 
+            "scoreStd": 0.05399585396077258
+        }, 
+        {
+            "scoreTimeStd": 0.002867441755680874, 
+            "scoreTime": 0.03233333333333333, 
+            "fitTime": 0.008666666666666666, 
+            "score": 0.8412141850619823, 
+            "params": {
+                "penalty": "l1", 
+                "C": 100.0
+            }, 
+            "fitTimeStd": 0.0028674417556808756, 
+            "scoreStd": 0.027984219069712497
+        }, 
+        {
+            "scoreTimeStd": 0.008259674462242577, 
+            "scoreTime": 0.016666666666666666, 
+            "fitTime": 0.006333333333333334, 
+            "score": 0.8399343853800403, 
+            "params": {
+                "penalty": "l1", 
+                "C": 1.0
+            }, 
+            "fitTimeStd": 0.0012472191289246471, 
+            "scoreStd": 0.0421291049701729
+        }
+    ], 
+    "lmCoefficients": {
+        "interceptStderr": null, 
+        "interceptTstat": null, 
+        "rescaledInterceptCoef": -0.41018409233913744, 
+        "rescaledCoefs": [
+            -0.6618789220181487, 
+            0.9506266101875879, 
+            -2.633131909850497, 
+            2.0250343377109394, 
+            2.177845802712375, 
+            3.1787102003140664, 
+            3.153864498925339
+        ], 
+        "variables": [
+            "dummy:Pclass:3", 
+            "dummy:Pclass:1", 
+            "dummy:Sex:0", 
+            "dummy:FamilySize:0.0", 
+            "dummy:FamilySize:0.4", 
+            "dummy:FamilySize:0.8", 
+            "dummy:FamilySize:1.2"
+        ], 
+        "interceptCoef": -0.41018409233913744, 
+        "interceptPvalue": null, 
+        "coefs": [
+            -0.6618789220181487, 
+            0.9506266101875879, 
+            -2.633131909850497, 
+            2.0250343377109394, 
+            2.177845802712375, 
+            3.1787102003140664, 
+            3.153864498925339
+        ]
+    }, 
+    "gridBestScore": 0.8412141850619823, 
+    "modelInputIsSparse": false
+}
