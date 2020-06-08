@@ -10,7 +10,7 @@ _Titanic_  was under the command of Capt.  [Edward Smith](https://en.wikipedia.o
 On this repository, you may find my personal projects related to Machine Learning, EDA, Python Jupyter Notebook and couple of Visualization based on the Dataiku Platform exported standard files. Most of the datasets I've been working with, downloaded from Kaggle. Installation pretty straight forward. Simply download the whole set as a single project as a ZIP files, everything have been flattened out with plain text files, and no SQL dump was involved, so there wouldn't be any missing system dependencies issue.
 
 # DataFlow
-![Titanic Dataflow](/images/dataflow)
+![Titanic Dataflow](/images/dataflow.png)
 This is how I created the data flow visualization process, and by the end of it, I'm applying, both the [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression#:~:text=Logistic%20regression%20is%20a%20statistical,a%20form%20of%20binary%20regression%29.) and the [Decision Tree Model](https://en.wikipedia.org/wiki/Decision_tree_learning) to supply the [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) challenge.
 
 # Features Handling
