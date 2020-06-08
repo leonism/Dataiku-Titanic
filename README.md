@@ -1,7 +1,9 @@
 # Kaggle's  Titanic Challenge on Dataiku!
 
-# Introduction
 
+
+# Introduction
+![Titanic Ship](/images/titanic.jpg)
 _Titanic_  was under the command of Capt.  [Edward Smith](https://en.wikipedia.org/wiki/Edward_Smith_(sea_captain) "Edward Smith (sea captain)"), who also  [went down with the ship](https://en.wikipedia.org/wiki/The_captain_goes_down_with_the_ship "The captain goes down with the ship"). The ocean liner carried some of the wealthiest people in the world, as well as hundreds of emigrants from  [Great Britain and Ireland](https://en.wikipedia.org/wiki/United_Kingdom_of_Great_Britain_and_Ireland "United Kingdom of Great Britain and Ireland"),  [Scandinavia](https://en.wikipedia.org/wiki/Scandinavia "Scandinavia")  and elsewhere throughout Europe, who were seeking a new life in the United States. The first-class accommodation was designed to be the pinnacle of comfort and luxury, with a gymnasium, swimming pool, libraries, high-class restaurants and opulent cabins. 
 
 # Installation
