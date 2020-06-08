@@ -22,13 +22,13 @@ Many of the features of the dataset, have been modified through [One Hot Encodin
 ![Titanic Initial Dataset Handling](/images/initial-dataset.png)
 
 ## Data Dictionary
-- Survived: 0 = No, 1 = Yes
-- pclass: Ticket class 1 = 1st, 2 = 2nd, 3 = 3rd
-- sibsp: # of siblings / spouses aboard the Titanic
-- parch: # of parents / children aboard the Titanic
-- ticket: Ticket number
-- cabin: Cabin number
-- embarked: Port of Embarkation C = Cherbourg, Q = Queenstown, S = Southampton
+- `Survived`: 0 = No, 1 = Yes
+- `pclass`: Ticket class 1 = 1st, 2 = 2nd, 3 = 3rd
+- `sibsp`: # of siblings / spouses aboard the Titanic
+- `parch`: # of parents / children aboard the Titanic
+- `ticket`: Ticket number
+- `cabin`: Cabin number
+- `embarked`: Port of Embarkation C = Cherbourg, Q = Queenstown, S = Southampton
 
 By default, the initial dataset coming from [Kaggle's](https://www.kaggle.com/c/titanic/data) challenge page would give you the above dataset features at hand. But we'll try to optimize them to something much more Machine Learning friendly looking dataset. And this is how I did it.
 
