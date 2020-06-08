@@ -58,11 +58,18 @@ You could do the similar in python with these following codes:
     for dataset in train_test_data:
         dataset['Title'] = dataset['Title'].map(title_mapping)
 
-Whereas in the case of Dataiku, it'd be something to this degree.
+Whereas in the case of Dataiku, it'd be something to this degree.<br /><br />
 ![Name Mapping](/images/mapping-name.png)
 
 ### Sex Column
-Now let's move on to the next data column, the sex column. It's pretty common that just about any Gender values would give you 'Male' or 'Female' attribution. But categorical requirement would still need you to change that to numerical attribution.
+Now let's move on to the next data column, the sex column. It's pretty common that just about any Gender data values would give you 'Male' or 'Female' attributions. But categorical requirement, would still be needing you to change that to numerical attribution. In python, you could this to have the output:
+
+    sex_mapping = {"male": 0, "female": 1}
+    for dataset in train_test_data:
+        dataset['Sex'] = dataset['Sex'].map(sex_mapping)
+Whereas in the prepare recipes, you might do something like this to achieve the similar output. <br /><br />
+![Gender Mapping](/images/mapping-gender.png)
+
 
 
 # Jupyter Notebooks
@@ -74,3 +81,4 @@ Now let's move on to the next data column, the sex column. It's pretty common th
 
 # Disclaimer
 And please remember, as this is only a weekend pet project, which I'm doing them for my personal interest only.
+
