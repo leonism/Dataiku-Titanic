@@ -1,3 +1,4 @@
+
 # Kaggle's  Titanic Challenge on Dataiku!
 
 
@@ -16,6 +17,53 @@ This is how I created the data flow visualization process, and by the end of it,
 # Features Handling
 ![Titanic Features Handling](/images/features-handling.png)
 Many of the features of the dataset, have been modified through [One Hot Encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) method, that way the ML algorithm would understand them and decipher them better by changing them to categorical units.
+
+## Initial Dataset Features
+![Titanic Initial Dataset Handling](/images/initial-dataset.png)
+
+## Data Dictionary
+- Survived: 0 = No, 1 = Yes
+- pclass: Ticket class 1 = 1st, 2 = 2nd, 3 = 3rd
+- sibsp: # of siblings / spouses aboard the Titanic
+- parch: # of parents / children aboard the Titanic
+- ticket: Ticket number
+- cabin: Cabin number
+- embarked: Port of Embarkation C = Cherbourg, Q = Queenstown, S = Southampton
+
+By default, the initial dataset coming from [Kaggle's](https://www.kaggle.com/c/titanic/data) challenge page would give you the above dataset features at hand. But we'll try to optimize them to something much more Machine Learning friendly looking dataset. And this is how I did it.
+
+### Name Column
+
+This is something you would normally do in Python to extract the Name information from the dataset. The objective is to get the Title information, so that you may utilize them into something more categorical, so that the Machine Learning algorithm could understand them better.
+ 
+    train_test_data = [train, test] # combining train and test dataset
+    for dataset in train_test_data:
+        dataset['Title'] = dataset['Name'].str.extract( '([A-Za-z]+)\.', expand=False)  
+
+Here's the similar method in Dataiku, in a way they produce the similar output, through their Data manipulation recipes canvas.
+![Cleaning The Name Column](/images/cleaning-name.png)
+
+#### Name Remapping
+Now let's map a categorical number to depict those Title values.
+- Mr : 0  
+- Miss : 1  
+- Mrs: 2  
+- Others: 3
+
+You could do the similar in python with these following codes:
+
+    title_mapping = {"Mr": 0, "Miss": 1, "Mrs": 2, 
+                     "Master": 3, "Dr": 3, "Rev": 3, "Col": 3, "Major": 3, "Mlle": 3,"Countess": 3,
+                     "Ms": 3, "Lady": 3, "Jonkheer": 3, "Don": 3, "Dona" : 3, "Mme": 3,"Capt": 3,"Sir": 3 }
+    for dataset in train_test_data:
+        dataset['Title'] = dataset['Title'].map(title_mapping)
+
+Whereas in the case of Dataiku, it'd be something to this degree.
+![Name Mapping](/images/mapping-name.png)
+
+### Sex Column
+Now let's move on to the next data column, the sex column. It's pretty common that just about any Gender values would give you 'Male' or 'Female' attribution. But categorical requirement would still need you to change that to numerical attribution.
+
 
 # Jupyter Notebooks
 - [Jupyter Notebooks](https://github.com/leonism/Dataiku-Titanic/tree/master/ipython_notebooks/.ipynb_checkpoints) 
